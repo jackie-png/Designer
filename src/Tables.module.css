@@ -1,0 +1,13 @@
+.table{
+    border: 1px solid;
+}
+
+.tableHeader{
+    border: 1px solid;
+}
+
+.tableCell{
+    border: 1px solid;
+    width: 1000px;
+
+}

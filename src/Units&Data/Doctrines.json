@@ -1,0 +1,327 @@
+{
+    "Mobile_Warfare":[
+        {
+            "Tank":{"Breakthrough": 0.2}, 
+            "Armour_Variant": {"Breakthrough": 0.2}
+        },
+        {
+            "Infantry":{"Organization": 15}, 
+            "Motorized Infantry": {"Organization": 15},
+            "Mechanized Infantry": {"Organization": 15},
+            "Amtrac Battalion": {"Organization": 15}
+
+        },
+        {
+            "Tank":{"Organization": 1, "Speed": 0.1}, 
+            "Armour_Variant": {"Speed": 0.1},
+            "Armoured Car":{"Organization": 2}
+        },
+        {
+            "Motorized Infantry": {"Speed": 0.1, "RecoveryRate": 0.2},
+            "Motorized Artillery": {"Speed": 0.1, "RecoveryRate": 0.2},
+            "Motorized Anti-Air": {"Speed": 0.1, "RecoveryRate": 0.2},
+            "Mechanized Infantry": {"Speed": 0.1, "RecoveryRate": 0.2},
+            "Armoured Car": {"Speed": 0.1, "RecoveryRate": 0.2},
+            "Amtrac Battalion": {"Speed": 0.1, "RecoveryRate": 0.2},
+            "Motorized Anti-Tank": {"Speed": 0.1, "RecoveryRate": 0.2}
+        },
+        {
+            "Tank":{"Organization": 3, "Breakthrough": 0.2}
+        },
+        {
+            "Infantry": {"Organization": 10},
+            "Motorized Infantry": {"Organization": 10},
+            "Mechanized Infantry": {"Organization": 10},
+            "Amtrac Battalion": {"Organization": 10}
+        },
+        {
+            "Tank":{"Organization": 2, "RecoveryRate": 0.1},
+            "Armour_Variant":{"RecoveryRate": 0.1}
+        },
+        {
+            "Motorized Infantry":{"Organization": 15},
+            "Mechanized Infantry":{"Organization": 15},
+            "Amtrac Battalion":{"Organization": 15},
+            "Tank":{"Organization": 3},
+            "Armoured Car":{"Organization": 3}
+        },
+        {
+            "Tank":{"Organization": 1, "RecoveryRate": 0.1},
+            "Armour_Variant": {"RecoveryRate": 0.1},
+            "Armoured Car": {"Organization": 7, "RecoveryRate": 0.1},
+            "Motorized Infantry":{"Organization": 5},
+            "Mechanized Infantry":{"Organization": 5},
+            "Amtrac Battalion": {"Organization": 5}
+        },
+        {
+            "Infantry": {"Organization": 10, "RecoveryRate": 0.2},
+            "Motorized Infantry": {"Organization": 10, "RecoveryRate": 0.2},
+            "Mechanized Infantry": {"Organization": 10, "RecoveryRate": 0.2},
+            "Amtrac Battalion": {"Organization": 10, "RecoveryRate": 0.2}        
+        },
+        {
+            "Nothing":0
+        },
+        {
+            "Infantry": {"Organization": 10},
+            "Motorized Infantry": {"Organization": 10},
+            "Mechanized Infantry": {"Organization": 10},
+            "Amtrac Battalion": {"Organization": 10},
+            "Tank": {"Organization": 2},
+            "Armoured Car":{"Organization": 2}
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Tank": {"Organization": 3, "Breakthrough": 0.2, "RecoveryRate": 0.2},
+            "Armoured Car": {"Organization": 3, "Breakthrough": 0.2, "RecoveryRate": 0.2},
+            "Armour_Variant": {"RecoveryRate": 0.2}
+        }
+
+    ],
+    "Superior_Firepower":[
+        {
+            "Frontline":{"Soft_Attack": 0.1}
+        },
+        {
+            "Infantry":{"Organization": 10}
+        },
+        {
+            "Infantry": {"Defense": 0.1},
+            "Motorized Infantry": {"Defense": 0.1},
+            "Mechanized Infantry": {"Defense": 0.1},
+            "Amtrac Battalion": {"Defense": 0.1}
+        },
+        {
+            "Artillery":{"RecoveryRate": 0.2},
+            "Motorized Artillery":{"RecoveryRate": 0.2},
+            "Rocket Artillery":{"RecoveryRate": 0.2},
+            "Truck-Drawn Rocket Artillery":{"RecoveryRate": 0.2},
+            "Motorized Rocket Artillery":{"RecoveryRate": 0.2},
+            "Anti-Air":{"RecoveryRate": 0.2},
+            "Motorized Anti-Air":{"RecoveryRate": 0.2},
+            "Anti-Tank": {"RecoveryRate": 0.2} ,
+            "Motorized Anti-Tank": {"RecoveryRate": 0.2}
+        },
+        {
+            "Support_Comapany": {"Organization": 10, "Soft_Attack": 0.25}
+        },
+        {
+            "Artillery":{"Soft_Attack": 0.1},
+            "Motorized Artillery":{"Soft_Attack": 0.1},
+            "Rocket Artillery":{"Soft_Attack": 0.1},
+            "Truck-Drawn Rocket Artillery":{"Soft_Attack": 0.1},
+            "Motorized Rocket Artillery":{"Soft_Attack": 0.1},
+            "Anti-Air":{"Soft_Attack": 0.1},
+            "Motorized Anti-Air":{"Soft_Attack": 0.1},
+            "Anti-Tank": {"Soft_Attack": 0.1} ,
+            "Motorized Anti-Tank": {"Soft_Attack": 0.1}
+        },
+        {
+            "Support_Comapany": {"Organization": 10, "Soft_Attack": 0.25}
+        },
+        {
+            "Tank":{"Breakthrough": 0.1},
+            "Armour_Variant":{"Breakthrough":0.1}
+        },
+        {
+            "Army":{"Hard_Attack": 0.1}
+        },
+        {
+            "Infantry":{"Soft_Attack": 0.05},
+            "Motorized Infantry": {"Soft_Attack": 0.05},
+            "Mechanized Infantry": {"Soft_Attack": 0.05},
+            "Amtrac Battalion": {"Soft_Attack": 0.05},
+            "Artillery":{"Soft_Attack": 0.05},
+            "Motorized Artillery":{"Soft_Attack": 0.05},
+            "Rocket Artillery":{"Soft_Attack": 0.05},
+            "Truck-Drawn Rocket Artillery":{"Soft_Attack": 0.05},
+            "Motorized Rocket Artillery":{"Soft_Attack": 0.05},
+            "Support_Artillery": {"Soft_Attack": 0.05}
+        },
+        {
+            "Tank":{"Soft_Attack": 0.1, "Hard_Attack": 0.1},
+            "Armour_Variant":{"Soft_Attack": 0.1, "Hard_Attack": 0.1}
+        },
+        {
+            "Recon": {"Recon": 2}
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Armoured Car": {"RecoveryRate": 0.05, "Organization": 2},
+            "Infantry": {"RecoveryRate": 0.05, "Organization": 10},
+            "Motorized Infantry": {"RecoveryRate": 0.05, "Organization": 10},
+            "Mechanized Infantry": {"RecoveryRate": 0.05, "Organization": 10},
+            "Amtrac Battalion": {"RecoveryRate": 0.05, "Organization": 10},
+            "Tank":{"RecoveryRate": 0.05, "Organization": 2},
+            "Armour_Variant":{"RecoveryRate": 0.05}
+        },
+        {
+            "Frontline": {"Organization": 5}
+        },
+        {
+            "Frontline": {"Soft_Attack": 0.05},
+            "Infantry": {"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Motorized Infantry": {"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Mechanized Infantry": {"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Amtrac Battalion": {"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Artillery":{"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Motorized Artillery":{"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Rocket Artillery":{"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Truck-Drawn Rocket Artillery":{"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Motorized Rocket Artillery":{"Soft_Attack": 0.05, "Hard_Attack": 0.05},
+            "Support_Artillery": {"Soft_Attack": 0.05, "Hard_Attack": 0.05}
+
+        }
+    ],
+    "Grand_Battleplan":[
+        {
+            "Nothing": 0
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Infantry": {"Defense": 0.1, "Organization": 10},
+            "Motorized Infantry": {"Defense": 0.1, "Organization": 10},
+            "Mechanized Infantry": {"Defense": 0.1, "Organization": 10},
+            "Amtrac Battalion": {"Defense": 0.1, "Organization": 10}
+        },
+        {
+            "Army": {"Breakthough": 0.1, "Soft_Attack": 0.05}
+        },
+        {
+            "Motorized Infantry": {"Organization": 5},
+            "Mechanized Infantry": {"Organization": 5},
+            "Amtrac Battalion": {"Organization": 5},
+            "Armoured Car": {"Organization": 5}
+        },
+        {
+            "Infantry":{"Organization": 5, "Breakthrough": 0.1}
+        },
+        {
+            "Nothing":0
+        },
+        {
+            "Tank": {"RecoveryRate": 0.1, "Organization": 2},
+            "Armour_Variant": {"RecoveryRate": 0.1},
+            "Armoured Car": {"RecoveryRate": 0.1, "Organization": 2}
+        },
+        {
+            "Tank": {"Organization": 1},
+            "Armoured Car": {"Organization": 1},
+            "Infantry": {"Organization": 5},
+            "Motorized Infantry": {"Organization": 5},
+            "Mechanized Infantry": {"Organization": 5},
+            "Amtrac Battalion": {"Organization": 5}
+
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Army": {"Breakthrough": 0.1}
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Tank": {"Organization": 1},
+            "Armoured Car": {"Organization": 1},
+            "Infantry": {"Organization": 5},
+            "Motorized Infantry": {"Organization": 5},
+            "Mechanized Infantry": {"Organization": 5},
+            "Amtrac Battalion": {"Organization": 5}            
+        },
+        {
+            "Tank": {"Organization": 1},
+            "Armoured Car": {"Organization": 2},
+            "Infantry": {"Organization": 5},
+            "Motorized Infantry": {"Organization": 5},
+            "Mechanized Infantry": {"Organization": 5},
+            "Amtrac Battalion": {"Organization": 5}
+        },
+        {
+            "Recon":{"Recon": 2}
+        }
+
+    ],
+    "Mass_Assault":[
+        {
+            "Nothing":0
+        },
+        {
+            "Nothing":0
+        },
+        {
+            "Infantry": {"Organization": 5},
+            "Motorized Infantry": {"Organization": 5},
+            "Mechanized Infantry": {"Organization": 5},
+            "Amtrac Battalion": {"Organization": 5}
+        },
+        {
+            "Nothing":0
+        },
+        {
+            "Nothing":0
+        },
+        {
+            "Tank": {"Organization": 2},
+            "Armoured Car": {"Organization": 2}
+        },
+        {
+            "Infantry Battalion":{"RecoveryRate": 2}
+        },
+        {
+            "Nothing": 0
+        },
+        {
+            "Infantry": {"Organization": 10},
+            "Motorized Infantry": {"Organization": 10},
+            "Mechanized Infantry": {"Organization": 10},
+            "Amtrac Battalion": {"Organization": 10},
+            "Tank": {"Organization": 10},
+            "Armoured Car": {"Organization": 10}
+        },
+        {
+            "Infantry Battalion":{"Width": -0.3}
+        },
+        {
+            "Infantry Battalion":{"Width": -0.4}
+        },
+        {
+            "Infantry": {"Organization": 5, "Breakthrough": 0.1},
+            "Motorized Infantry": {"Organization": 5, "Breakthrough": 0.1},
+            "Mechanized Infantry": {"Organization": 5, "Breakthrough": 0.1},
+            "Amtrac Battalion": {"Organization": 5, "Breakthrough": 0.1},
+            "Tank": {"Organization": 1, "Breakthrough": 0.1},
+            "Armoured Car": {"Organization": 1, "Breakthrough": 0.1}
+        },
+        {
+            "Army": {"RecoveryRate": 0.2}
+        },
+        {
+            "Motorized Infantry": {"Organization": 10, "RecoveryRate": 0.1},
+            "Mechanized Infantry": {"Organization": 10, "RecoveryRate": 0.1},
+            "Amtrac Battalion": {"Organization": 10, "RecoveryRate": 0.1},
+            "Tank": {"Organization": 2},
+            "Armoured Car": {"Organization": 3, "RecoveryRate": 0.1},
+            "Armour_Variant":{"RecoveryRate": 0.1}
+        },
+        {
+            "Nothing":0
+        }
+    ]
+}
