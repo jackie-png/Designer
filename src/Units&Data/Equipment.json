@@ -1,0 +1,343 @@
+{
+            "1936":{
+                "Infantry Equipment":{
+                    "Soft_Attack": 6,
+                    "Hard_Attack": 1,
+                    "Breakthrough": 3,
+                    "Piercing": 4,
+                    "Defense": 22,
+                    "Speed": 4,
+                    "Reliability": 0.9
+                },
+                "Support Equipment":{
+                    "Reliability": 0.8
+                },
+                "Truck":{
+                    "Breakthrough": 5,
+                    "Hardness": 0.1,
+                    "Speed": 12,
+                    "Reliability": 0.8,
+                    "Fuel_Use": 1.2
+                },
+                "Armoured Car":{
+                    "Defense": 2,
+                    "Hardness": 0.65,
+                    "Hard_Attack": 2,
+                    "Armour": 3,
+                    "Reliability": 0.8,
+                    "Breakthrough": 12,
+                    "Soft_Attack": 6,
+                    "Speed": 9,
+                    "Piercing": 6,
+                    "Fuel_Use": 0.8
+                },
+                "Towed Artillery":{
+                    "Defense": 10,
+                    "Breakthrough": 6,
+                    "Soft_Attack": 25,
+                    "Hard_Attack": 2,
+                    "Piercing":5,
+                    "Reliability": 0.8
+                },
+                "Towed Anti Air":{
+                    "Defense": 4,
+                    "Soft_Attack": 3,
+                    "Air_Attack": 19,
+                    "Reliability": 0.8,
+                    "Breakthrough": 1,
+                    "Hard_Attack": 7,
+                    "Piercing": 25
+                },
+                "Towed Anti Tank":{
+                    "Defense": 4,
+                    "Soft_Attack": 4,
+                    "Piercing": 60,
+                    "Hardness": 0.1,
+                    "Hard_Attack": 20,
+                    "Reliability": 0.8
+                }
+            },
+            "1940":{
+                "Infantry Equipment":{
+                    "Soft_Attack": 9,
+                    "Hard_Attack": 1.5,
+                    "Breakthrough": 4,
+                    "Piercing": 5,
+                    "Defense": 28,
+                    "Speed": 4,
+                    "Reliability": 0.9
+                },
+                "Truck":{
+                    "Breakthrough": 5,
+                    "Hardness": 0.1,
+                    "Speed": 12,
+                    "Reliability": 0.8,
+                    "Fuel_Use": 1.2
+                },
+                "Armoured Car":{
+                    "Defense": 3,
+                    "Hardness": 0.65,
+                    "Hard_Attack": 4,
+                    "Armour": 10,
+                    "Reliability": 0.8,
+                    "Breakthrough": 16,
+                    "Soft_Attack": 13,
+                    "Speed": 12,
+                    "Piercing": 8,
+                    "Fuel_Use": 1.8
+                },
+                "Towed Artillery":{
+                    "Defense": 15,
+                    "Breakthrough": 7,
+                    "Soft_Attack": 30,
+                    "Hard_Attack": 2,
+                    "Piercing": 5,
+                    "Reliability": 0.8
+                },
+                "Towed Anti Air":{
+                    "Defense": 4,
+                    "Soft_Attack": 3.5,
+                    "Air_Attack": 25,
+                    "Reliability": 0.8,
+                    "Breakthrough": 1,
+                    "Hard_Attack": 11,
+                    "Piercing": 60
+                },
+                "Towed Anti Tank":{
+                    "Defense": 4,
+                    "Soft_Attack": 4,
+                    "Piercing": 90,
+                    "Hardness": 0.1,
+                    "Hard_Attack": 22,
+                    "Reliability": 0.8
+                },
+                "Towed Rocket Artillery":{
+                    "Defense": 12,
+                    "Soft_Attack": 30,
+                    "Piercing": 2,
+                    "Hard_Attack": 1,
+                    "Reliability": 0.8,
+                    "Breakthrough": 9
+                },
+                "Motorized Rocket Artillery":{
+                    "Defense": 15,
+                    "Soft_Attack": 36,
+                    "Piercing": 2,
+                    "Hard_Attack": 1,
+                    "Reliability": 0.8,
+                    "Breakthrough": 12,
+                    "Fuel_Use": 1.2
+                }, 
+                "Mechanized Equipment":{
+                    "Defense": 26,
+                    "Piercing": 11,
+                    "Hardness": 0.6,
+                    "Reliability": 0.8,
+                    "Breakthrough": 6,
+                    "Fuel_Use": 2.4,
+                    "Speed": 8,
+                    "Armour": 10
+                },
+                "Amtrac":{
+                    "Defense": 26,
+                    "Piercing": 11,
+                    "Hardness": 0.6,
+                    "Reliability": 0.8,
+                    "Breakthrough": 4,
+                    "Fuel_Use": 4,
+                    "Speed": 7,
+                    "Armour": 10
+                }
+            },
+            "1942":{
+                "Infantry Equipment":{
+                    "Soft_Attack": 12,
+                    "Hard_Attack": 2,
+                    "Breakthrough": 5,
+                    "Piercing": 10,
+                    "Defense": 34,
+                    "Speed": 4,
+                    "Reliability": 0.8
+                },
+                "Support Equipment":{
+                    "Reliability": 0.8
+                },
+                "Truck":{
+                    "Breakthrough": 5,
+                    "Hardness": 0.1,
+                    "Speed": 12,
+                    "Reliability": 0.8,
+                    "Fuel_Use": 1.2
+                },
+                "Armoured Car":{
+                    "Defense": 5,
+                    "Hardness": 0.7,
+                    "Hard_Attack": 8,
+                    "Armour": 20,
+                    "Reliability": 0.8,
+                    "Breakthrough": 28,
+                    "Soft_Attack": 16,
+                    "Speed": 15,
+                    "Piercing": 36,
+                    "Fuel_Use": 1.8
+                },
+                "Towed Artillery":{
+                    "Defense": 18,
+                    "Breakthrough": 8,
+                    "Soft_Attack": 34,
+                    "Hard_Attack": 2,
+                    "Piercing": 5,
+                    "Reliability": 0.8
+                },
+                "Towed Anti Air":{
+                    "Defense": 4,
+                    "Soft_Attack": 3.5,
+                    "Air_Attack": 25,
+                    "Reliability": 0.8,
+                    "Breakthrough": 1,
+                    "Hard_Attack": 11,
+                    "Piercing": 60
+                },
+                "Towed Anti Tank":{
+                    "Defense": 4,
+                    "Soft_Attack": 4,
+                    "Piercing": 90,
+                    "Hardness": 0.1,
+                    "Hard_Attack": 22,
+                    "Reliability": 0.8
+                },
+                "Towed Rocket Artillery":{
+                    "Defense": 12,
+                    "Soft_Attack": 30,
+                    "Piercing": 2,
+                    "Hard_Attack": 1,
+                    "Reliability": 0.8,
+                    "Breakthrough": 9
+                },
+                "Motorized Rocket Artillery":{
+                    "Defense": 15,
+                    "Soft_Attack": 36,
+                    "Piercing": 2,
+                    "Hard_Attack": 1,
+                    "Reliability": 0.8,
+                    "Breakthrough": 12,
+                    "Fuel_Use": 1.2
+                }, 
+                "Mechanized Equipment":{
+                    "Defense": 30,
+                    "Piercing": 16,
+                    "Hardness": 0.7,
+                    "Reliability": 0.8,
+                    "Breakthrough": 8,
+                    "Fuel_Use": 2.4,
+                    "Speed": 10,
+                    "Armour": 15
+                },
+                "Amtrac":{
+                    "Defense": 26,
+                    "Piercing": 11,
+                    "Hardness": 0.6,
+                    "Reliability": 0.8,
+                    "Breakthrough": 4,
+                    "Fuel_Use": 4,
+                    "Speed": 7,
+                    "Armour": 10
+                }
+            },
+            "1945":{
+                "Infantry Equipment":{
+                    "Soft_Attack": 12,
+                    "Hard_Attack": 2,
+                    "Breakthrough": 5,
+                    "Piercing": 10,
+                    "Defense": 34,
+                    "Speed": 4,
+                    "Reliability": 0.8
+                },
+                "Support Equipment":{
+                    "Reliability": 0.8
+                },
+                "Truck":{
+                    "Breakthrough": 5,
+                    "Hardness": 0.1,
+                    "Speed": 12,
+                    "Reliability": 0.8,
+                    "Fuel_Use": 1.2
+                },
+                "Armoured Car":{
+                    "Defense": 5,
+                    "Hardness": 0.7,
+                    "Hard_Attack": 8,
+                    "Armour": 20,
+                    "Reliability": 0.8,
+                    "Breakthrough": 28,
+                    "Soft_Attack": 16,
+                    "Speed": 15,
+                    "Piercing": 36,
+                    "Fuel_Use": 1.8
+                },
+                "Towed Artillery":{
+                    "Defense": 18,
+                    "Breakthrough": 8,
+                    "Soft_Attack": 34,
+                    "Hard_Attack": 2,
+                    "Piercing": 5,
+                    "Reliability": 0.8
+                },
+                "Towed Anti Air":{
+                    "Defense": 4,
+                    "Soft_Attack": 4,
+                    "Air_Attack": 32,
+                    "Reliability": 0.8,
+                    "Breakthrough": 1,
+                    "Hard_Attack": 15,
+                    "Piercing": 88
+                },
+                "Towed Anti Tank":{
+                    "Defense": 4,
+                    "Soft_Attack": 4,
+                    "Piercing": 125,
+                    "Hardness": 0.1,
+                    "Hard_Attack": 30,
+                    "Reliability": 0.8
+                },
+                "Towed Rocket Artillery":{
+                    "Defense": 15,
+                    "Soft_Attack": 38,
+                    "Piercing": 2,
+                    "Hard_Attack": 1,
+                    "Reliability": 0.8,
+                    "Breakthrough": 12
+                },
+                "Motorized Rocket Artillery":{
+                    "Defense": 15,
+                    "Soft_Attack": 36,
+                    "Piercing": 2,
+                    "Hard_Attack": 1,
+                    "Reliability": 0.8,
+                    "Breakthrough": 12,
+                    "Fuel_Use": 1.2
+                }, 
+                "Mechanized Equipment":{
+                    "Defense": 34,
+                    "Piercing": 21,
+                    "Hardness": 0.75,
+                    "Reliability": 0.8,
+                    "Breakthrough": 10,
+                    "Fuel_Use": 2.4,
+                    "Speed": 12,
+                    "Armour": 20
+                },
+                "Amtrac":{
+                    "Defense": 30,
+                    "Piercing": 16,
+                    "Hardness": 0.70,
+                    "Reliability": 0.8,
+                    "Breakthrough": 5,
+                    "Fuel_Use": 4,
+                    "Speed": 10,
+                    "Armour": 15
+                }
+            }
+        }
+

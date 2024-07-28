@@ -14,23 +14,10 @@
       "Width": 2.0,
       "Manpower": 1000,
       "TrainingTime": 90,
-      "Speed": 4,
-      "Soft_Attack": 6.0,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 23.1,
-      "Breakthrough": 3.1,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 43,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 100,
-          "Reliability": 0.90   
+          "Amount": 100
         }
       ],
       "isSpecial": false
@@ -49,28 +36,14 @@
       "Width": 2.0,
       "Manpower": 1000,
       "TrainingTime": 90,
-      "Speed": 6.4,
-      "Soft_Attack": 6,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 23.1,
-      "Breakthrough": 3.1,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 83,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 100,
-          "Reliability": 0.90   
+          "Amount": 100
         },
         {
           "Name": "Support Equipment",
-          "Amount": 10,
-          "Reliability": 0.80   
+          "Amount": 10
         }
 
       ],
@@ -90,23 +63,10 @@
       "Width": 2.0,
       "Manpower": 1000,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 6.0,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 22.6,
-      "Breakthrough": 3.9,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 60,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 140,
-          "Reliability": 0.90   
+          "Amount": 140
         }
       ],
       "isSpecial": true
@@ -125,23 +85,10 @@
       "Width": 2.0,
       "Manpower": 1000,
       "TrainingTime": 120,
-      "Speed": 4.0,
-      "Soft_Attack": 6,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 22.6,
-      "Breakthrough": 3.9,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 64,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 150,
-          "Reliability": 0.90   
+          "Amount": 150
         }
       ],
       "isSpecial": true
@@ -160,23 +107,10 @@
       "Width": 2.0,
       "Manpower": 1000,
       "TrainingTime": 120,
-      "Speed": 4.0,
-      "Soft_Attack": 6.0,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 22,
-      "Breakthrough": 3.9,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 64.5,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 150,
-          "Reliability": 0.90   
+          "Amount": 150
         }
       ],
       "isSpecial": true
@@ -195,23 +129,10 @@
       "Width": 2.0,
       "Manpower": 1000,
       "TrainingTime": 150,
-      "Speed": 4.0,
-      "Soft_Attack": 6,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 22.6,
-      "Breakthrough": 3.0,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 55,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 130,
-          "Reliability": 0.90   
+          "Amount": 130
         }
       ],
       "isSpecial": true
@@ -219,7 +140,7 @@
   ],
   "Motorized_Bat":[
     {
-      "Name": "Cavarly",
+      "Name": "Cavalry",
       "Type": "Mobile",
       "Frontline": true,
       "Intro_Year": 1936,
@@ -232,23 +153,10 @@
       "Width": 2.0,
       "Manpower": 1000,
       "TrainingTime": 120,
-      "Speed": 6.4,
-      "Soft_Attack": 6,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 22.4,
-      "Breakthrough": 3.0,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 51,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 120,
-          "Reliability": 0.90   
+          "Amount": 120
         }
       ],
       "isSpecial": false
@@ -267,27 +175,13 @@
       "Width": 2.0,
       "Manpower": 1200,
       "TrainingTime": 90,
-      "Speed": 12,
-      "Soft_Attack": 6,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 23.1,
-      "Breakthrough": 8.4,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0.10,
-      "Fuel_Cap": 57.6,
-      "Fuel_Use": 1.2,
-      "Production_Cost": 130,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 100,
-          "Reliability": 0.90   
+          "Amount": 100
         },{
           "Name": "Truck",
-          "Amount": 35,
-          "Reliability": 0.80   
+          "Amount": 35
         }
       ],
       "isSpecial": false
@@ -306,28 +200,14 @@
       "Width": 2.0,
       "Manpower": 1200,
       "TrainingTime": 120,
-      "Speed": 8,
-      "Soft_Attack": 10.8,
-      "Hard_Attack": 7.5,
-      "Air_Attack": 0,
-      "Defence": 62.1,
-      "Breakthrough": 11.5,
-      "Armour": 10,
-      "Piercing": 16,
-      "Hardness": 0.60,
-      "Fuel_Cap": 115.2,
-      "Fuel_Use": 2.40,
-      "Production_Cost": 363,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 100,
-          "Reliability": 0.90   
+          "Amount": 100
         },
         {
           "Name": "Mechanized Trucks",
-          "Amount": 40,
-          "Reliability": 0.80   
+          "Amount": 40
         }
       ],
       "isSpecial": false
@@ -346,28 +226,14 @@
       "Width": 2.0,
       "Manpower": 1200,
       "TrainingTime": 120,
-      "Speed": 7,
-      "Soft_Attack": 10.8,
-      "Hard_Attack": 2.2,
-      "Air_Attack": 0,
-      "Defence": 62.1,
-      "Breakthrough": 9.2,
-      "Armour": 10,
-      "Piercing": 16,
-      "Hardness": 0.60,
-      "Fuel_Cap": 192.0,
-      "Fuel_Use": 4.0,
-      "Production_Cost": 443.0,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 100,
-          "Reliability": 0.90   
+          "Amount": 100
         },
         {
           "Name": "Amtracs",
-          "Amount": 50,
-          "Reliability": 0.80   
+          "Amount": 50
         }
       ],
       "isSpecial": true
@@ -386,23 +252,10 @@
       "Width": 2.0,
       "Manpower": 500,
       "TrainingTime": 180,
-      "Speed": 9,
-      "Soft_Attack": 6.0,
-      "Hard_Attack": 2.0,
-      "Air_Attack": 0,
-      "Defence": 2,
-      "Breakthrough": 12.0,
-      "Armour": 3,
-      "Piercing": 6,
-      "Hardness": 0.65,
-      "Fuel_Cap": 38.40,
-      "Fuel_Use": 0.8,
-      "Production_Cost": 240,
       "Equipment_List":[
         {
           "Name": "Armoured Cars",
-          "Amount": 60,
-          "Reliability": 0.80   
+          "Amount": 60
         }
       ],
       "isSpecial": false
@@ -425,23 +278,10 @@
       "Width": 3,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 4.0,
-      "Soft_Attack": 27.5,
-      "Hard_Attack": 2.0,
-      "Air_Attack": 0,
-      "Defence": 10,
-      "Breakthrough": 6.0,
-      "Armour": null,
-      "Piercing": 5,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 126,
       "Equipment_List":[
         {
           "Name": "Artillery",
-          "Amount": 36,
-          "Reliability": 0.8   
+          "Amount": 36
         }
       ],
       "isSpecial": false
@@ -461,23 +301,10 @@
       "Width": 1.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 3.0,
-      "Hard_Attack": 7.0,
-      "Air_Attack": 19,
-      "Defence": 4,
-      "Breakthrough": 1.0,
-      "Armour": null,
-      "Piercing": 25,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 120,
       "Equipment_List":[
         {
           "Name": "Anti Air",
-          "Amount": 30,
-          "Reliability": 0.80   
+          "Amount": 30
         }
       ],
       "isSpecial": false
@@ -496,23 +323,10 @@
       "Width": 1.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 4,
-      "Hard_Attack": 20,
-      "Air_Attack": 0,
-      "Defence": 4,
-      "Breakthrough": 0,
-      "Armour": null,
-      "Piercing": 60,
-      "Hardness": 0.1,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 144,
       "Equipment_List":[
         {
           "Name": "Anti Tank",
-          "Amount": 36,
-          "Reliability": 0.80   
+          "Amount": 36
         }
       ],
       "isSpecial": false
@@ -532,23 +346,10 @@
       "Width": 3.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 4.0,
-      "Soft_Attack": 30.0,
-      "Hard_Attack": 1.0,
-      "Air_Attack": 0,
-      "Defence": 12,
-      "Breakthrough": 9.0,
-      "Armour": null,
-      "Piercing": 2,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 144.0,
       "Equipment_List":[
         {
           "Name": "Rocket Artillery",
-          "Amount": 36,
-          "Reliability": 0.80   
+          "Amount": 36
         }
       ],
       "isSpecial": false
@@ -570,28 +371,14 @@
       "Width": 3.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 12,
-      "Soft_Attack": 27.5,
-      "Hard_Attack": 2,
-      "Air_Attack": 0,
-      "Defence": 10,
-      "Breakthrough": 11.0,
-      "Armour": null,
-      "Piercing": 5,
-      "Hardness": 0.10,
-      "Fuel_Cap": 57.6,
-      "Fuel_Use": 1.2,
-      "Production_Cost": 216,
       "Equipment_List":[
         {
           "Name": "Artillery",
-          "Amount": 36,
-          "Reliability": 0.8   
+          "Amount": 36
         },
         {
           "Name": "Truck",
-          "Amount": 36,
-          "Reliability": 0.80   
+          "Amount": 36
         }
       ],
       "isSpecial": false
@@ -611,28 +398,14 @@
       "Width": 1.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 12,
-      "Soft_Attack": 3.0,
-      "Hard_Attack": 7,
-      "Air_Attack": 19,
-      "Defence": 4,
-      "Breakthrough": 6.0,
-      "Armour": null,
-      "Piercing": 25,
-      "Hardness": 0.10,
-      "Fuel_Cap": 57.6,
-      "Fuel_Use": 1.20,
-      "Production_Cost": 245,
       "Equipment_List":[
         {
           "Name": "Anti Air",
-          "Amount": 36,
-          "Reliability": 0.80   
+          "Amount": 36
         },
         {
           "Name": "Truck",
-          "Amount": 50,
-          "Reliability": 0.80   
+          "Amount": 50
         }
       ],
       "isSpecial": false
@@ -651,28 +424,14 @@
       "Width": 1.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 12,
-      "Soft_Attack": 4.0,
-      "Hard_Attack": 20,
-      "Air_Attack": 0,
-      "Defence": 4,
-      "Breakthrough": 5.0,
-      "Armour": null,
-      "Piercing": 60,
-      "Hardness": 0.20,
-      "Fuel_Cap": 57.6,
-      "Fuel_Use": 1.20,
-      "Production_Cost": 269,
       "Equipment_List":[
         {
           "Name": "Anti Tank",
-          "Amount": 36,
-          "Reliability": 0.80   
+          "Amount": 36
         },
         {
           "Name": "Truck",
-          "Amount": 50,
-          "Reliability": 0.80   
+          "Amount": 50
         }
       ],
       "isSpecial": false
@@ -692,28 +451,14 @@
       "Width": 3.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 12,
-      "Soft_Attack": 30,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 12,
-      "Breakthrough": 14,
-      "Armour": null,
-      "Piercing": 2,
-      "Hardness": 0.20,
-      "Fuel_Cap": 57.6,
-      "Fuel_Use": 1.2,
-      "Production_Cost": 234.0,
       "Equipment_List":[
         {
           "Name": "Rocket Artillery",
-          "Amount": 36,
-          "Reliability": 0.80   
+          "Amount": 36
         },
         {
           "Name": "Truck",
-          "Amount": 36,
-          "Reliability": 0.80   
+          "Amount": 36
         }
       ],
       "isSpecial": false
@@ -733,28 +478,14 @@
       "Width": 3.0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 12,
-      "Soft_Attack": 36.0,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 15,
-      "Breakthrough": 17,
-      "Armour": null,
-      "Piercing": 2,
-      "Hardness": 0.10,
-      "Fuel_Cap": 115.2,
-      "Fuel_Use": 2.4,
-      "Production_Cost": 277.5,
       "Equipment_List":[
         {
           "Name": "Motorized Rocket Artillery",
-          "Amount": 20,
-          "Reliability": 0.80   
+          "Amount": 20
         },
         {
           "Name": "Truck",
-          "Amount": 15,
-          "Reliability": 0.80   
+          "Amount": 15
         }
       ],
       "isSpecial": false
@@ -777,23 +508,10 @@
       "Width": 0,
       "Manpower": 300,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 2,
-      "Hard_Attack": 10,
-      "Air_Attack": 0,
-      "Defence": 2,
-      "Breakthrough": 0,
-      "Armour": null,
-      "Piercing": 51,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 96,
       "Equipment_List":[
         {
           "Name": "Anti Tank",
-          "Amount": 24,
-          "Reliability": 0.80   
+          "Amount": 24
         }
       ]
     },
@@ -811,23 +529,10 @@
       "Width": 0,
       "Manpower": 300,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 1.8,
-      "Hard_Attack": 4.2,
-      "Air_Attack": 15.2,
-      "Defence": 2.4,
-      "Breakthrough": 0.6,
-      "Armour": null,
-      "Piercing": 25,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 80,
       "Equipment_List":[
         {
           "Name": "Anti Air",
-          "Amount": 20,
-          "Reliability": 0.80   
+          "Amount": 20
         }
       ]
     },
@@ -845,23 +550,10 @@
       "Width": 0,
       "Manpower": 300,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 17.2,
-      "Hard_Attack": 1.2,
-      "Air_Attack": 0,
-      "Defence": 6,
-      "Breakthrough": 3.6,
-      "Armour": null,
-      "Piercing": 5,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 42,
       "Equipment_List":[
         {
           "Name": "Artillery",
-          "Amount": 12,
-          "Reliability": 0.8   
+          "Amount": 12
         }
       ]
     },
@@ -879,23 +571,10 @@
       "Width": 0,
       "Manpower": 300,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 15,
-      "Hard_Attack": 0.5,
-      "Air_Attack": 0,
-      "Defence": 6,
-      "Breakthrough": 4.5,
-      "Armour": null,
-      "Piercing": 2,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 48,
       "Equipment_List":[
         {
           "Name": "Rocket Artillery",
-          "Amount": 12,
-          "Reliability": 0.80   
+          "Amount": 12
         }
       ]
       
@@ -916,28 +595,14 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 6.4,
-      "Soft_Attack": 0.60,
-      "Hard_Attack": 0.1,
-      "Air_Attack": 0,
-      "Defence": 11,
-      "Breakthrough": 1.5,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 57,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 40,
-          "Reliability": 0.90   
+          "Amount": 40
         },
         {
           "Name": "Support Equipment",
-          "Amount": 10,
-          "Reliability": 0.80   
+          "Amount": 10
         }
       ]
     },
@@ -957,28 +622,14 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 0,
-      "Soft_Attack": 6,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 22,
-      "Breakthrough": 3,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 77,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 40,
-          "Reliability": 0.90   
+          "Amount": 40
         },
         {
           "Name": "Support Equipment",
-          "Amount": 15,
-          "Reliability": 0.80   
+          "Amount": 15
         }
       ]
     },
@@ -998,33 +649,18 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 12,
-      "Soft_Attack": 0.6,
-      "Hard_Attack": 0.1,
-      "Air_Attack": 0,
-      "Defence": 20,
-      "Breakthrough": 4,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 57.6,
-      "Fuel_Use": 1.2,
-      "Production_Cost": 107,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 40,
-          "Reliability": 0.90   
+          "Amount": 40
         },
         {
           "Name": "Support Equipment",
-          "Amount": 10,
-          "Reliability": 0.80   
+          "Amount": 10
         },
         {
           "Name": "Truck",
-          "Amount": 20,
-          "Reliability": 0.80   
+          "Amount": 20
         }
       ]
     },
@@ -1044,23 +680,10 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 9,
-      "Soft_Attack": 3,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 1,
-      "Breakthrough": 9.6,
-      "Armour": 3,
-      "Piercing": 6,
-      "Hardness": 0,
-      "Fuel_Cap": 38.4,
-      "Fuel_Use": 0.8,
-      "Production_Cost": 96,
       "Equipment_List":[
         {
           "Name": "Armoured Car",
-          "Amount": 24,
-          "Reliability": 0.80   
+          "Amount": 24
         }
       ]
     },
@@ -1078,29 +701,14 @@
       "Width": 0,
       "Manpower": 300,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 3,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 24.2,
-      "Breakthrough": 4.5,
-      "Entrenchment": 2,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 124,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 10,
-          "Reliability": 0.90   
+          "Amount": 10
         },
         {
           "Name": "Support Equipment",
-          "Amount": 40,
-          "Reliability": 0.80   
+          "Amount": 40
         }
       ]
     },
@@ -1118,28 +726,14 @@
       "Width": 0,
       "Manpower": 300,
       "TrainingTime": 120,
-      "Speed": 0,
-      "Soft_Attack": 1.5,
-      "Hard_Attack": 0.5,
-      "Air_Attack": 0,
-      "Defence": 22,
-      "Breakthrough": 3,
-      "Armour": null,
-      "Piercing": 1,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 164.3,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 10,
-          "Reliability": 0.90   
+          "Amount": 10
         },
         {
           "Name": "Support Equipment",
-          "Amount": 40,
-          "Reliability": 0.80   
+          "Amount": 40
         }
       ]
     },
@@ -1159,28 +753,14 @@
       "Trickleback": 0.2,
       "Exp_Loss": -0.15,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 0,
-      "Hard_Attack": 0,
-      "Air_Attack": 0,
-      "Defence": 0,
-      "Breakthrough": 5,
-      "Armour": null,
-      "Piercing": null,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 170,
       "Equipment_List":[
         {
           "Name": "Truck",
-          "Amount": 20,
-          "Reliability": 0.80   
+          "Amount": 20
         },
         {
           "Name": "Support Equipment",
-          "Amount": 30,
-          "Reliability": 0.80   
+          "Amount": 30
         }
       ]
     },
@@ -1198,30 +778,16 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 0,
-      "Hard_Attack": 0,
-      "Air_Attack": 0,
-      "Defence": 0,
-      "Breakthrough": 5,
-      "Armour": null,
-      "Piercing": null,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 105,
-      "Fuel_Use_Sub": 0.05,
-      "Supply_Use_Sub": 0.1,
+      "Fuel_Use_Sub": -0.05,
+      "Supply_Use_Sub": -0.1,
       "Equipment_List":[
         {
           "Name": "Truck",
-          "Amount": 10,
-          "Reliability": 0.80   
+          "Amount": 10
         },
         {
           "Name": "Support Equipment",
-          "Amount": 20,
-          "Reliability": 0.80   
+          "Amount": 20
         }
       ]
     },
@@ -1239,25 +805,12 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 0,
-      "Hard_Attack": 0,
-      "Air_Attack": 0,
-      "Defence": 0,
-      "Breakthrough": 0,
-      "Armour": null,
-      "Piercing": null,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 100,
       "Relia_Bonus": 0.5,
       "Equipment_Capture_Ratio": 0.05,
       "Equipment_List":[
         {
           "Name": "Support Equipment",
-          "Amount": 25,
-          "Reliability": 0.80   
+          "Amount": 25
         }
       ]
     },
@@ -1276,28 +829,14 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 180,
-      "Speed": 4,
-      "Soft_Attack": 6,
-      "Hard_Attack": 1,
-      "Air_Attack": 0,
-      "Defence": 22,
-      "Breakthrough": 3,
-      "Armour": null,
-      "Piercing": 4,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 57,
       "Equipment_List":[
         {
           "Name": "Infantry Equipment",
-          "Amount": 40,
-          "Reliability": 0.90   
+          "Amount": 40
         },
         {
           "Name": "Support Equipment",
-          "Amount": 10,
-          "Reliability": 0.80   
+          "Amount": 10
         }
       ]
     },
@@ -1316,28 +855,14 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Speed": 4,
-      "Soft_Attack": 0,
-      "Hard_Attack": 0,
-      "Air_Attack": 0,
-      "Defence": 0,
-      "Breakthrough": 5,
-      "Armour": null,
-      "Piercing": null,
-      "Hardness": 0,
-      "Fuel_Cap": 0,
-      "Fuel_Use": 0,
-      "Production_Cost": 96,
       "Equipment_List":[
         {
           "Name": "Truck",
-          "Amount": 10,
-          "Reliability": 0.80   
+          "Amount": 10
         },
         {
           "Name": "Support Equipment",
-          "Amount": 20,
-          "Reliability": 0.80   
+          "Amount": 20
         }
       ]
     }

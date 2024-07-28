@@ -440,7 +440,7 @@ export function hardAtk(battalionMap, yearTech, doctrineBuffMap){
     return total
 }
 
-export function defence(battalionMap, yearTech, doctrineBuffMap){
+export function defense(battalionMap, yearTech, doctrineBuffMap){
     let total = 0;
     if (battalionMap.size > 0) {
         for (const battalion of battalionMap.keys()){
@@ -469,7 +469,7 @@ export function defence(battalionMap, yearTech, doctrineBuffMap){
                     doctrineBuff += doctrineBuffMap.get("Army").Defense;                    
                 }
             }
-            total += (battalion.Defence + yearTech.get(battalion.Name).Defence * (1+doctrineBuff)) * battalionMap.get(battalion);
+            total += (battalion.Defense + yearTech.get(battalion.Name).Defense * (1+doctrineBuff)) * battalionMap.get(battalion);
         }
     } else {
         return 0

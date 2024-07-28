@@ -197,7 +197,7 @@
             "Amtrac Battalion": {"Defense": 0.1, "Organization": 10}
         },
         {
-            "Army": {"Breakthough": 0.1, "Soft_Attack": 0.05}
+            "Army": {"Breakthrough": 0.1, "Soft_Attack": 0.05}
         },
         {
             "Motorized Infantry": {"Organization": 5},

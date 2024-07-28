@@ -1,0 +1,409 @@
+{
+    "Year_Bonus":{
+        "1936":{
+            "Infantry Battalion":{
+                "Defense":0.05,
+                "Breakthrough":0.05
+            },
+            "Bicycle":{
+                "Defense":0.05,
+                "Breakthrough":0.05
+            },
+            "Motorized Infantry":{
+                "Defense":0.05,
+                "Breakthrough":0.05
+            },
+            "Mechanized Infantry":{
+                "Defense":0.05,
+                "Breakthrough":0.05
+            },
+            "Amtrac Battalion":{
+                "Defense":0.05,
+                "Breakthrough":0.05
+            },
+            "Cavalry":{
+                "Defense":0.02,
+                "Breakthrough":0.02
+            },
+            "Mountaineer":{
+                "Defense":0.03,
+                "Breakthrough":0.03
+            },
+            "Marines":{
+                "Defense":0.03,
+                "Breakthrough":0.03
+            },
+            "Paratrooper":{
+                "Defense":0.03,
+                "Breakthrough":0.03
+            },
+            "Artillery":{
+                "Soft_Attack": 0.1
+            },
+            "Support Artillery":{
+                "Soft_Attack": 0.1
+            },
+            "Motorized Artillery":{
+                "Soft_Attack": 0.1
+            }
+        },
+        "1940":{
+            "Infantry":{
+                "Soft_Attack": 0.10
+            },
+            "Infantry Battalion":{
+                "Defense":0.15,
+                "Breakthrough":0.15
+            },
+            "Bicycle":{
+                "Defense":0.15,
+                "Breakthrough":0.15
+            },
+            "Motorized Infantry":{
+                "Defense":0.15,
+                "Breakthrough":0.15,
+                "Soft_Attack": 0.10
+            },
+            "Mechanized Infantry":{
+                "Defense":0.15,
+                "Breakthrough":0.15,
+                "Soft_Attack": 0.10
+            },
+            "Amtrac Battalion":{
+                "Defense":0.15,
+                "Breakthrough":0.15,
+                "Soft_Attack": 0.10
+            },
+            "Cavalry":{
+                "Defense":0.06,
+                "Breakthrough":0.06,
+                "Soft_Attack": 0.10
+            },
+            "Mountaineer":{
+                "Defense":0.09,
+                "Breakthrough":0.09,
+                "Soft_Attack": 0.05,
+                "Organization": 5
+            },
+            "Marines":{
+                "Defense":0.09,
+                "Breakthrough":0.09,
+                "Soft_Attack": 0.05,
+                "Organization": 5
+            },
+            "Paratrooper":{
+                "Defense":0.09,
+                "Breakthrough":0.09,
+                "Soft_Attack": 0.05,
+                "Organization": 5
+            },
+            "Artillery":{
+                "Soft_Attack": 0.2
+            },
+            "Support Artillery":{
+                "Soft_Attack": 0.2
+            },
+            "Motorized Artillery":{
+                "Soft_Attack": 0.2
+            },
+            "Anti-Air":{
+                "Air_Attack": 0.1
+            },
+            "Support Anti-Air":{
+                "Air_Attack": 0.1
+            },
+            "Motorized Anti-Air":{
+                "Air_Attack": 0.1
+            },
+            "Anti-Tank":{
+                "Hard_Attack": 0.1,
+                "Piercing": 0.2
+            },
+            "Motorized Anti-Tank":{
+                "Hard_Attack": 0.1,
+                "Piercing": 0.2
+            },
+            "Support Anti-Tank":{
+                "Hard_Attack": 0.1,
+                "Piercing": 0.2
+            },
+            "Engineer Company":{
+                "Entrenchment": 0.5
+            },
+            "Recon":{
+                "Recon": 2
+            },
+            "Military Police":{
+                "Supp_Bonus": 0.1
+            },
+            "Maintenance Company":{
+                "Relia_Bonus": 0.05,
+                "Equipment_Capture_Ratio": 0.05
+            },
+            "Field Hospital":{
+                "Trickleback": 0.1,
+                "Exp_Loss": -0.1
+            },
+            "Logistics Company":{
+                "Fuel_Use_Sub": -0.05,
+                "Supply_Use_Sub": -0.1
+            },
+            "Signal Company":{
+                "Initiative": 0.12
+            }
+        },
+        "1942":{
+            "Infantry":{
+                "Soft_Attack": 0.10,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
+            },
+            "Infantry Battalion":{
+                "Defense":0.2,
+                "Breakthrough":0.2
+            },
+            "Bicycle":{
+                "Defense":0.2,
+                "Breakthrough":0.2
+            },
+            "Motorized Infantry":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.10,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
+            },
+            "Mechanized Infantry":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.10,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
+            },
+            "Amtrac Battalion":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.10,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
+            },
+            "Cavalry":{
+                "Defense":0.08,
+                "Breakthrough":0.08,
+                "Soft_Attack": 0.10
+            },
+            "Mountaineer":{
+                "Defense":0.12,
+                "Breakthrough":0.12,
+                "Soft_Attack": 0.05,
+                "Organization": 5
+            },
+            "Marines":{
+                "Defense":0.12,
+                "Breakthrough":0.12,
+                "Soft_Attack": 0.05,
+                "Organization": 5
+            },
+            "Paratrooper":{
+                "Defense":0.12,
+                "Breakthrough":0.12,
+                "Soft_Attack": 0.05,
+                "Organization": 5
+            },
+            "Artillery":{
+                "Soft_Attack": 0.3
+            },
+            "Support Artillery":{
+                "Soft_Attack": 0.3
+            },
+            "Motorized Artillery":{
+                "Soft_Attack": 0.3
+            },
+            "Anti-Air":{
+                "Air_Attack": 0.3
+            },
+            "Support Anti-Air":{
+                "Air_Attack": 0.3
+            },
+            "Motorized Anti-Air":{
+                "Air_Attack": 0.3
+            },
+            "Anti-Tank":{
+                "Hard_Attack": 0.3,
+                "Piercing": 0.4
+            },
+            "Motorized Anti-Tank":{
+                "Hard_Attack": 0.25,
+                "Piercing": 0.4
+            },
+            "Support Anti-Tank":{
+                "Hard_Attack": 0.3,
+                "Piercing": 0.4
+            },
+            "Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Support Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Truck-Drawn Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Motorized Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Engineer Company":{
+                "Entrenchment": 1
+            },
+            "Recon":{
+                "Recon": 4
+            },
+            "Military Police":{
+                "Supp_Bonus": 0.2
+            },
+            "Maintenance Company":{
+                "Relia_Bonus": 0.1,
+                "Equipment_Capture_Ratio": 0.05
+            },
+            "Field Hospital":{
+                "Trickleback": 0.2,
+                "Exp_Loss": -0.2
+            },
+            "Logistics Company":{
+                "Fuel_Use_Sub": -0.1,
+                "Supply_Use_Sub": -0.2
+            },
+            "Signal Company":{
+                "Initiative": 0.24
+            }
+        },
+        "1945":{
+            "Infantry":{
+                "Soft_Attack": 0.15,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
+            },
+            "Infantry Battalion":{
+                "Defense":0.2,
+                "Breakthrough":0.2
+            },
+            "Bicycle":{
+                "Defense":0.2,
+                "Breakthrough":0.2
+            },
+            "Motorized Infantry":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.20,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
+            },
+            "Mechanized Infantry":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.20,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
+            },
+            "Amtrac Battalion":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.20,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
+            },
+            "Cavalry":{
+                "Defense":0.08,
+                "Breakthrough":0.08,
+                "Soft_Attack": 0.20
+            },
+            "Mountaineer":{
+                "Defense":0.12,
+                "Breakthrough":0.12,
+                "Soft_Attack": 0.05,
+                "Organization": 10
+            },
+            "Marines":{
+                "Defense":0.12,
+                "Breakthrough":0.12,
+                "Soft_Attack": 0.05,
+                "Organization": 10
+            },
+            "Paratrooper":{
+                "Defense":0.12,
+                "Breakthrough":0.12,
+                "Soft_Attack": 0.05,
+                "Organization": 10
+            },
+            "Artillery":{
+                "Soft_Attack": 0.4
+            },
+            "Support Artillery":{
+                "Soft_Attack": 0.4
+            },
+            "Motorized Artillery":{
+                "Soft_Attack": 0.4
+            },
+            "Anti-Air":{
+                "Air_Attack": 0.3
+            },
+            "Support Anti-Air":{
+                "Air_Attack": 0.3
+            },
+            "Motorized Anti-Air":{
+                "Air_Attack": 0.3
+            },
+            "Anti-Tank":{
+                "Hard_Attack": 0.3,
+                "Piercing": 0.4
+            },
+            "Motorized Anti-Tank":{
+                "Hard_Attack": 0.25,
+                "Piercing": 0.4
+            },
+            "Support Anti-Tank":{
+                "Hard_Attack": 0.3,
+                "Piercing": 0.4
+            },
+            "Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Support Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Truck-Drawn Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Motorized Rocket Artillery":{
+                "Soft_Attack": 0.30
+            },
+            "Engineer Company":{
+                "Entrenchment": 1.5
+            },
+            "Recon":{
+                "Recon": 6
+            },
+            "Military Police":{
+                "Supp_Bonus": 0.3
+            },
+            "Maintenance Company":{
+                "Relia_Bonus": 0.15,
+                "Equipment_Capture_Ratio": 0.1
+            },
+            "Field Hospital":{
+                "Trickleback": 0.3,
+                "Exp_Loss": -0.3
+            },
+            "Logistics Company":{
+                "Fuel_Use_Sub": -0.15,
+                "Supply_Use_Sub": -0.3
+            },
+            "Signal Company":{
+                "Initiative": 0.36
+            }
+        }
+
+    }
+
+}
+
