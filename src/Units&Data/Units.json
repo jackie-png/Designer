@@ -47,6 +47,9 @@
         }
 
       ],
+      "Equipment_Modifier":{
+        "Speed": 0.6
+      },
       "isSpecial": false
     },
     {
@@ -69,6 +72,9 @@
           "Amount": 140
         }
       ],
+      "Equipment_Modifier":{
+        "Breakthrough": 0.3
+      },
       "isSpecial": true
     },
     {
@@ -91,6 +97,9 @@
           "Amount": 150
         }
       ],
+      "Equipment_Modifier":{
+        "Breakthrough": 0.3
+      },
       "isSpecial": true
     },
     {
@@ -113,6 +122,9 @@
           "Amount": 150
         }
       ],
+      "Equipment_Modifier":{
+        "Breakthrough": 0.3
+      },
       "isSpecial": true
     },
     {
@@ -159,6 +171,9 @@
           "Amount": 120
         }
       ],
+      "Equipment_Modifier":{
+        "Speed": 0.6
+      },
       "isSpecial": false
     },
     {
@@ -210,6 +225,10 @@
           "Amount": 40
         }
       ],
+      "Equipment_Modifier":{
+        "Soft_Attack": 0.1,
+        "Hard_Attack": 4
+      },
       "isSpecial": false
     },
     {
@@ -236,6 +255,10 @@
           "Amount": 50
         }
       ],
+      "Equipment_Modifier":{
+        "Soft_Attack": 0.1,
+        "Hard_Attack":0.5
+      },
       "isSpecial": true
     },    
     {
@@ -513,7 +536,12 @@
           "Name": "Anti Tank",
           "Amount": 24
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.5,
+        "Hard_Attack": -0.5,
+        "Piercing": -0.15
+      }
     },
     {
       "Name": "Support Anti-Air",
@@ -534,7 +562,14 @@
           "Name": "Anti Air",
           "Amount": 20
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.4,
+        "Hard_Attack": -0.4,
+        "Air_Attack": -0.2,
+        "Defense": -0.4,
+        "Breakthrough": -0.4
+      }
     },
     {
       "Name": "Support Artillery",
@@ -555,7 +590,13 @@
           "Name": "Artillery",
           "Amount": 12
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.4,
+        "Hard_Attack": -0.4,
+        "Defense": -0.4,
+        "Breakthrough": -0.4
+      }
     },
     {
       "Name": "Support Rocket Artillery",
@@ -576,7 +617,13 @@
           "Name": "Rocket Artillery",
           "Amount": 12
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.5,
+        "Hard_Attack": -0.5,
+        "Defense": -0.5,
+        "Breakthrough": -0.5
+      }
       
     },
     {
@@ -604,7 +651,21 @@
           "Name": "Support Equipment",
           "Amount": 10
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.9,
+        "Hard_Attack": -0.9,
+        "Defense": -0.5,
+        "Breakthrough": -0.5
+      },
+      "Support_Modifier":{
+        "Artillery":{
+          "Soft_Attack":0.1
+        },
+        "Support_Artillery":{
+          "Soft_Attack": 0.1
+        }
+      }
     },
     {
       "Name": "Rangers",
@@ -662,7 +723,21 @@
           "Name": "Truck",
           "Amount": 20
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.9,
+        "Hard_Attack": -0.9,
+        "Defense": -0.5,
+        "Breakthrough": -0.5
+      },
+      "Support_Modifier":{
+        "Artillery":{
+          "Soft_Attack":0.1
+        },
+        "Support_Artillery":{
+          "Soft_Attack": 0.1
+        }
+      }
     },
     {
       "Name": "Armoured Car Recon Company",
@@ -685,7 +760,21 @@
           "Name": "Armoured Car",
           "Amount": 24
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.5,
+        "Hard_Attack": -0.5,
+        "Defense": -0.5,
+        "Breakthrough": -0.2
+      },
+      "Support_Modifier":{
+        "Artillery":{
+          "Soft_Attack":0.1
+        },
+        "Support_Artillery":{
+          "Soft_Attack": 0.1
+        }
+      }
     },
     {
       "Name": "Engineer Company",
@@ -710,7 +799,29 @@
           "Name": "Support Equipment",
           "Amount": 40
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.5,
+        "Defense": 0.1,
+        "Breakthrough": 0.5
+      },
+      "Support_Modifier":{
+        "Infantry Battalion":{
+          "Entrenchment": 0.2
+        },
+        "Bicycle":{
+          "Entrenchment": 0.2
+        },
+        "Mountaineer":{
+          "Entrenchment": 0.2
+        },
+        "Marines":{
+          "Entrenchment": 0.2
+        },
+        "Paratrooper":{
+          "Entrenchment": 0.2
+        }
+      }
     },
     {
       "Name": "Pioneers",
@@ -735,7 +846,17 @@
           "Name": "Support Equipment",
           "Amount": 40
         }
-      ]
+      ],
+      "Equipment_Modifier":{
+        "Soft_Attack": -0.5,
+        "Defense": 0.1,
+        "Breakthrough": 0.5
+      },
+      "Support_Modifier":{
+        "Marines":{
+          "Breakthrough":0.15
+        }
+      }
     },
     {
       "Name": "Field Hospital",
@@ -762,7 +883,33 @@
           "Name": "Support Equipment",
           "Amount": 30
         }
-      ]
+      ],
+      "Support_Modifier":{
+        "Infantry Battalion":{
+          "HP": 0.1
+        },
+        "Bicycle":{
+          "HP": 0.1
+        },
+        "Mountaineer":{
+          "HP": 0.1
+        },
+        "Marines":{
+          "HP": 0.1
+        },
+        "Paratrooper":{
+          "HP": 0.1
+        },
+        "Motorized Infantry":{
+          "HP": 0.1
+        },
+        "Mechanized Infantry":{
+          "HP": 0.1
+        },
+        "Amtrac Battalion":{
+          "HP": 0.1
+        }
+      }
     },
     {
       "Name": "Logistics Company",
@@ -838,7 +985,33 @@
           "Name": "Support Equipment",
           "Amount": 10
         }
-      ]
+      ],
+      "Support_Modifier":{
+        "Infantry Battalion":{
+          "RecoveryRate": 0.2
+        },
+        "Bicycle":{
+          "RecoveryRate": 0.2
+        },
+        "Mountaineer":{
+          "RecoveryRate": 0.2
+        },
+        "Marines":{
+          "RecoveryRate": 0.2
+        },
+        "Paratrooper":{
+          "RecoveryRate": 0.2
+        },
+        "Motorized Infantry":{
+          "RecoveryRate": 0.2
+        },
+        "Mechanized Infantry":{
+          "RecoveryRate": 0.2
+        },
+        "Amtrac Battalion":{
+          "RecoveryRate": 0.2
+        }
+      }
     },
     {
       "Name": "Signal Company",

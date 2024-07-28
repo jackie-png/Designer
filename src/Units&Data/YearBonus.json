@@ -1,5 +1,4 @@
 {
-    "Year_Bonus":{
         "1936":{
             "Infantry Battalion":{
                 "Defense":0.05,
@@ -53,11 +52,15 @@
             },
             "Infantry Battalion":{
                 "Defense":0.15,
-                "Breakthrough":0.15
+                "Breakthrough":0.15,
+                "Soft_Attack": 0.10
+
             },
             "Bicycle":{
                 "Defense":0.15,
-                "Breakthrough":0.15
+                "Breakthrough":0.15,
+                "Soft_Attack": 0.10
+
             },
             "Motorized Infantry":{
                 "Defense":0.15,
@@ -82,19 +85,19 @@
             "Mountaineer":{
                 "Defense":0.09,
                 "Breakthrough":0.09,
-                "Soft_Attack": 0.05,
+                "Soft_Attack": 0.15,
                 "Organization": 5
             },
             "Marines":{
                 "Defense":0.09,
                 "Breakthrough":0.09,
-                "Soft_Attack": 0.05,
+                "Soft_Attack": 0.15,
                 "Organization": 5
             },
             "Paratrooper":{
                 "Defense":0.09,
                 "Breakthrough":0.09,
-                "Soft_Attack": 0.05,
+                "Soft_Attack": 0.15,
                 "Organization": 5
             },
             "Artillery":{
@@ -153,18 +156,19 @@
             }
         },
         "1942":{
-            "Infantry":{
+            "Infantry Battalion":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
                 "Soft_Attack": 0.10,
                 "Hard_Attack": 0.25,
                 "Piercing": 1
             },
-            "Infantry Battalion":{
-                "Defense":0.2,
-                "Breakthrough":0.2
-            },
             "Bicycle":{
                 "Defense":0.2,
-                "Breakthrough":0.2
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.10,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
             },
             "Motorized Infantry":{
                 "Defense":0.2,
@@ -195,20 +199,26 @@
             "Mountaineer":{
                 "Defense":0.12,
                 "Breakthrough":0.12,
-                "Soft_Attack": 0.05,
-                "Organization": 5
+                "Soft_Attack": 0.15,
+                "Organization": 5,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
             },
             "Marines":{
                 "Defense":0.12,
                 "Breakthrough":0.12,
-                "Soft_Attack": 0.05,
-                "Organization": 5
+                "Soft_Attack": 0.15,
+                "Organization": 5,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
             },
             "Paratrooper":{
                 "Defense":0.12,
                 "Breakthrough":0.12,
-                "Soft_Attack": 0.05,
-                "Organization": 5
+                "Soft_Attack": 0.15,
+                "Organization": 5,
+                "Hard_Attack": 0.25,
+                "Piercing": 1
             },
             "Artillery":{
                 "Soft_Attack": 0.3
@@ -278,18 +288,19 @@
             }
         },
         "1945":{
-            "Infantry":{
+            "Infantry Battalion":{
+                "Defense":0.2,
+                "Breakthrough":0.2,
                 "Soft_Attack": 0.15,
                 "Hard_Attack": 0.50,
                 "Piercing": 2
             },
-            "Infantry Battalion":{
-                "Defense":0.2,
-                "Breakthrough":0.2
-            },
             "Bicycle":{
                 "Defense":0.2,
-                "Breakthrough":0.2
+                "Breakthrough":0.2,
+                "Soft_Attack": 0.15,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
             },
             "Motorized Infantry":{
                 "Defense":0.2,
@@ -320,20 +331,26 @@
             "Mountaineer":{
                 "Defense":0.12,
                 "Breakthrough":0.12,
-                "Soft_Attack": 0.05,
-                "Organization": 10
+                "Soft_Attack": 0.20,
+                "Organization": 10,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
             },
             "Marines":{
                 "Defense":0.12,
                 "Breakthrough":0.12,
-                "Soft_Attack": 0.05,
-                "Organization": 10
+                "Soft_Attack": 0.20,
+                "Organization": 10,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
             },
             "Paratrooper":{
                 "Defense":0.12,
                 "Breakthrough":0.12,
-                "Soft_Attack": 0.05,
-                "Organization": 10
+                "Soft_Attack": 0.20,
+                "Organization": 10,
+                "Hard_Attack": 0.50,
+                "Piercing": 2
             },
             "Artillery":{
                 "Soft_Attack": 0.4
@@ -404,6 +421,4 @@
         }
 
     }
-
-}
 

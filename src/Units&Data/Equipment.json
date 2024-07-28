@@ -31,7 +31,7 @@
                     "Piercing": 6,
                     "Fuel_Use": 0.8
                 },
-                "Towed Artillery":{
+                "Artillery":{
                     "Defense": 10,
                     "Breakthrough": 6,
                     "Soft_Attack": 25,
@@ -39,7 +39,7 @@
                     "Piercing":5,
                     "Reliability": 0.8
                 },
-                "Towed Anti Air":{
+                "Anti Air":{
                     "Defense": 4,
                     "Soft_Attack": 3,
                     "Air_Attack": 19,
@@ -48,7 +48,7 @@
                     "Hard_Attack": 7,
                     "Piercing": 25
                 },
-                "Towed Anti Tank":{
+                "Anti Tank":{
                     "Defense": 4,
                     "Soft_Attack": 4,
                     "Piercing": 60,
@@ -66,6 +66,9 @@
                     "Defense": 28,
                     "Speed": 4,
                     "Reliability": 0.9
+                },
+                "Support Equipment":{
+                    "Reliability": 0.8
                 },
                 "Truck":{
                     "Breakthrough": 5,
@@ -86,7 +89,7 @@
                     "Piercing": 8,
                     "Fuel_Use": 1.8
                 },
-                "Towed Artillery":{
+                "Artillery":{
                     "Defense": 15,
                     "Breakthrough": 7,
                     "Soft_Attack": 30,
@@ -94,7 +97,7 @@
                     "Piercing": 5,
                     "Reliability": 0.8
                 },
-                "Towed Anti Air":{
+                "Anti Air":{
                     "Defense": 4,
                     "Soft_Attack": 3.5,
                     "Air_Attack": 25,
@@ -103,7 +106,7 @@
                     "Hard_Attack": 11,
                     "Piercing": 60
                 },
-                "Towed Anti Tank":{
+                "Anti Tank":{
                     "Defense": 4,
                     "Soft_Attack": 4,
                     "Piercing": 90,
@@ -111,7 +114,7 @@
                     "Hard_Attack": 22,
                     "Reliability": 0.8
                 },
-                "Towed Rocket Artillery":{
+                "Rocket Artillery":{
                     "Defense": 12,
                     "Soft_Attack": 30,
                     "Piercing": 2,
@@ -181,7 +184,7 @@
                     "Piercing": 36,
                     "Fuel_Use": 1.8
                 },
-                "Towed Artillery":{
+                "Artillery":{
                     "Defense": 18,
                     "Breakthrough": 8,
                     "Soft_Attack": 34,
@@ -189,7 +192,7 @@
                     "Piercing": 5,
                     "Reliability": 0.8
                 },
-                "Towed Anti Air":{
+                "Anti Air":{
                     "Defense": 4,
                     "Soft_Attack": 3.5,
                     "Air_Attack": 25,
@@ -198,7 +201,7 @@
                     "Hard_Attack": 11,
                     "Piercing": 60
                 },
-                "Towed Anti Tank":{
+                "Anti Tank":{
                     "Defense": 4,
                     "Soft_Attack": 4,
                     "Piercing": 90,
@@ -206,7 +209,7 @@
                     "Hard_Attack": 22,
                     "Reliability": 0.8
                 },
-                "Towed Rocket Artillery":{
+                "Rocket Artillery":{
                     "Defense": 12,
                     "Soft_Attack": 30,
                     "Piercing": 2,
@@ -276,7 +279,7 @@
                     "Piercing": 36,
                     "Fuel_Use": 1.8
                 },
-                "Towed Artillery":{
+                "Artillery":{
                     "Defense": 18,
                     "Breakthrough": 8,
                     "Soft_Attack": 34,
@@ -284,7 +287,7 @@
                     "Piercing": 5,
                     "Reliability": 0.8
                 },
-                "Towed Anti Air":{
+                "Anti Air":{
                     "Defense": 4,
                     "Soft_Attack": 4,
                     "Air_Attack": 32,
@@ -293,7 +296,7 @@
                     "Hard_Attack": 15,
                     "Piercing": 88
                 },
-                "Towed Anti Tank":{
+                "Anti Tank":{
                     "Defense": 4,
                     "Soft_Attack": 4,
                     "Piercing": 125,
@@ -301,7 +304,7 @@
                     "Hard_Attack": 30,
                     "Reliability": 0.8
                 },
-                "Towed Rocket Artillery":{
+                "Rocket Artillery":{
                     "Defense": 15,
                     "Soft_Attack": 38,
                     "Piercing": 2,
