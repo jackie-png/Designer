@@ -17,6 +17,7 @@ function App() {
   const [doctrineBuffs_Army, setDoctrineBuffs_Army] = useState(); //accumulator of stat buffs to all batatlions from doctrines, each 
   const [doctrineBuffsMap, setDoctrineBuffsMap] = useState(new Map()); // this map stores the accumulated buff for a aspecific type of unit
   const [popUp, setPopup] = useState(false);
+  const [supportModifiers, setSuppMods] = useState(new Map());
 
 // let g = {
 //   "Speed": 0,
@@ -123,7 +124,7 @@ function App() {
 
   return (
     <>
-      <statsArrays.Provider value={{tech, setTechLevel, yearTech, doctrineBuffs_Army, setDoctrineBuffs_Army, doctrineBuffsMap, setDoctrineBuffsMap, year, setYear, batMap, setBatMap, battalionArr, setBattalionArr, baseStats, setBaseStats, attackStats, setAttackStats, equipmentCost, setEquipmentCost, equipmentList, setEquipmentList, units}}>
+      <statsArrays.Provider value={{supportModifiers, setSuppMods, tech, setTechLevel, yearTech, doctrineBuffs_Army, setDoctrineBuffs_Army, doctrineBuffsMap, setDoctrineBuffsMap, year, setYear, batMap, setBatMap, battalionArr, setBattalionArr, baseStats, setBaseStats, attackStats, setAttackStats, equipmentCost, setEquipmentCost, equipmentList, setEquipmentList, units}}>
         <h1>Hearts of Iron 4 Online Division Designer</h1>
         <button onClick={()=>setPopup(true)}>
           Doctrines

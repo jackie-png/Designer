@@ -30,6 +30,7 @@ function Popup(props) {
         newArr[props.selected] = battalion;
         let newMap = new Map(batMap);
         let newEquipMap = new Map(equipMap);
+        let newSupportMods = new Map(stats.supportModifiers);
 
         if (!newMap.has(battalion)){ //if the battalion map doesnt have the current battalion in it, add it in and set the count to 1
             newMap.set(battalion, 1);
@@ -47,11 +48,38 @@ function Popup(props) {
                 newEquipMap.set(equipment.Name, (newEquipMap.get(equipment.Name)+equipment.Amount));
             }
         }
+
+        //add the support modifiers to the accumulating object, only for support companies
+
+        if (battalion.Type === "Support_Company"){
+            for (let [modifier,stat] of Object.entries(battalion.Support_Modifier)){ // for every support company modifier inside the support company
+                // add the battalion inside
+                console.log(modifier)
+                console.log(stat)
+                if (newSupportMods.has(modifier)){ // if the map already has an entry for this battalion
+                     for (let [modStat, value] of Object.entries(stat)){ // for every stat modifed 
+                        console.log(modStat)
+                        console.log(value)
+                        if(Object.hasOwn(newSupportMods.get(modifier), modStat)){ // check if the object inside the map has this property
+                            newSupportMods.get(modifier)[modStat] += value;
+                        } else {
+                            newSupportMods.get(modifier)[modStat] = value;
+                        }
+                    }   
+                } else {
+                    newSupportMods.set(modifier, stat)
+                }
+            }
+        }
+
+
         console.log("After");
         console.log(newEquipMap);
+        console.log(newSupportMods);
         stats.setEquipmentList(newEquipMap);
         stats.setBatMap(newMap);
         stats.setBattalionArr(newArr);
+        stats.setSuppMods(newSupportMods);
 
     }
 

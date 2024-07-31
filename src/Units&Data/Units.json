@@ -541,7 +541,8 @@
         "Soft_Attack": -0.5,
         "Hard_Attack": -0.5,
         "Piercing": -0.15
-      }
+      },
+      "Support_Modifier":{}
     },
     {
       "Name": "Support Anti-Air",
@@ -569,7 +570,8 @@
         "Air_Attack": -0.2,
         "Defense": -0.4,
         "Breakthrough": -0.4
-      }
+      },
+      "Support_Modifier":{}
     },
     {
       "Name": "Support Artillery",
@@ -596,7 +598,8 @@
         "Hard_Attack": -0.4,
         "Defense": -0.4,
         "Breakthrough": -0.4
-      }
+      },
+      "Support_Modifier":{}
     },
     {
       "Name": "Support Rocket Artillery",
@@ -623,7 +626,8 @@
         "Hard_Attack": -0.5,
         "Defense": -0.5,
         "Breakthrough": -0.5
-      }
+      },
+      "Support_Modifier":{}
       
     },
     {
@@ -692,7 +696,8 @@
           "Name": "Support Equipment",
           "Amount": 15
         }
-      ]
+      ],
+      "Support_Modifier":{}
     },
     {
       "Name": "Motorized Recon Company",
@@ -936,7 +941,8 @@
           "Name": "Support Equipment",
           "Amount": 20
         }
-      ]
+      ],
+      "Support_Modifier":{}
     },
     {
       "Name": "Maintenance Company",
@@ -959,7 +965,8 @@
           "Name": "Support Equipment",
           "Amount": 25
         }
-      ]
+      ],
+      "Support_Modifier":{}
     },
     {
       "Name": "Military Police",
@@ -1037,7 +1044,8 @@
           "Name": "Support Equipment",
           "Amount": 20
         }
-      ]
+      ],
+      "Support_Modifier":{}
     }
   ]
 }
