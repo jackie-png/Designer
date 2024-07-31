@@ -69,6 +69,7 @@ function Popup(props) {
                 } else {
                     newSupportMods.set(modifier, stat)
                 }
+                console.log(newSupportMods)
             }
         }
 

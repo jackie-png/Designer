@@ -1,13 +1,16 @@
 import Equipment_Catalogue from './Units&Data/Equipment.json'
 import Year_Bonus from './Units&Data/YearBonus.json'
 
-export function softAtk(battalionMap, year, doctrineBuffs){
+export function softAtk(battalionMap, year, doctrineBuffs, supportModifiers){
 
     let total = 0;
     let baseStat; // the base stat of that equipment
     let doctrineBonus; // the doctrine buffs applied to baseStat
     let equipmentBonus; // the equipment bonus applied to baseStat
     let yearBonus; // the technology bonus for applied to baseStat
+    let suppMods; // holds the value for the support company modifier
+
+    console.log(supportModifiers);
 
 
     //formula for the stats of a battalion
@@ -19,6 +22,7 @@ export function softAtk(battalionMap, year, doctrineBuffs){
         // reset all the stats to be 0
         baseStat = 0;
         doctrineBonus = 0;
+        suppMods = 0;
 
         //calculate the equipmentBonus
         if (Object.hasOwn(battalion, "Equipment_Modifier")){
@@ -66,6 +70,14 @@ export function softAtk(battalionMap, year, doctrineBuffs){
             }
         }
 
+        //find if there is any support company modifiers
+        console.log()
+        if (supportModifiers.has(battalion.Name)){
+            suppMods = supportModifiers.get(battalion.Name).Soft_Attack;
+        } else {
+            suppMods = 0;
+        }
+
         //calculating the baseStat
         battalion.Equipment_List.forEach(element => { // for every equipment in the battalion's equipment 
             console.log(element);
@@ -74,9 +86,9 @@ export function softAtk(battalionMap, year, doctrineBuffs){
             }
         });
 
-        console.log(`BaseStats: ${baseStat} |DoctrineBuffs: ${doctrineBonus} |EquipmentBonus: ${equipmentBonus} |YearBonus: ${yearBonus}`)
+        console.log(`Battalion: ${battalion.Name}|BaseStats: ${baseStat} |DoctrineBuffs: ${doctrineBonus} |EquipmentBonus: ${equipmentBonus} |YearBonus: ${yearBonus}| SuppMods: ${suppMods}`)
 
-        total += (baseStat + (baseStat * (doctrineBonus + equipmentBonus + yearBonus))) * battalionMap.get(battalion)
+        total += (baseStat + (baseStat * (doctrineBonus + equipmentBonus + yearBonus))) * (1 + suppMods) * battalionMap.get(battalion)
     }
     return total
 }

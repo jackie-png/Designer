@@ -666,7 +666,7 @@
         "Artillery":{
           "Soft_Attack":0.1
         },
-        "Support_Artillery":{
+        "Support Artillery":{
           "Soft_Attack": 0.1
         }
       }
@@ -776,7 +776,7 @@
         "Artillery":{
           "Soft_Attack":0.1
         },
-        "Support_Artillery":{
+        "Support Artillery":{
           "Soft_Attack": 0.1
         }
       }

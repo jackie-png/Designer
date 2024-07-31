@@ -41,7 +41,7 @@ function Selector(){
         // newBaseStats[10] = trickleBack(batMap,stats.tech);
         // newBaseStats[11] = xpLoss(batMap,stats.tech);
 
-        newAttackStats[0] = softAtk(batMap,stats.year, stats.doctrineBuffsMap);
+        newAttackStats[0] = softAtk(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers);
         // newAttackStats[1] = hardAtk(batMap,stats.tech, stats.doctrineBuffsMap);
         // newAttackStats[2] = airAtk(batMap,stats.tech, stats.doctrineBuffsMap);
         // newAttackStats[3] = defense(batMap,stats.tech, stats.doctrineBuffsMap);
