@@ -4,7 +4,7 @@ import { statsArrays } from "./App";
 import styles from './Tables.module.css';
 import Popup from "./Popup";
 //import {speed, hp, organization, recoveryRate, suppression, supplyUse, weight, trickleBack, softAtk, hardAtk, defense, breakthrough, airAtk, combatWidth, armour, hardness, initiative, entrench, piercing, avg_relia, xpLoss, recon, reliBonus, capture_ratio, manpower, training, fuel_cap, fuel_usage} from "./Statscalc.js"
-import {list, softAtk} from "./Stats_Calculator.js";
+import {list, calculateCombatStats} from "./Stats_Calculator.js";
 
 
 function Selector(){
@@ -28,36 +28,36 @@ function Selector(){
         
 
         // //go through each stat and call the respective function to calculate the new stat
-        // newBaseStats[0] = speed(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[1] = hp(batMap,stats.tech);
-        // newBaseStats[2] = organization(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[3] = recoveryRate(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[4] = recon(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[5] = suppression(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[6] = weight(batMap,stats.tech);
-        // newBaseStats[7] = supplyUse(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[8] = avg_relia(batMap,stats.tech);
-        // newBaseStats[9] = reliBonus(batMap,stats.tech);
-        // newBaseStats[10] = trickleBack(batMap,stats.tech);
-        // newBaseStats[11] = xpLoss(batMap,stats.tech);
+        // // newBaseStats[0] = speed(batMap,stats.tech, stats.doctrineBuffsMap);
+        // newBaseStats[1] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "HP");
+        // // newBaseStats[2] = organization(batMap,stats.tech, stats.doctrineBuffsMap);
+        // // newBaseStats[3] = recoveryRate(batMap,stats.tech, stats.doctrineBuffsMap);
+        // // newBaseStats[4] = recon(batMap,stats.tech, stats.doctrineBuffsMap);
+        // newBaseStats[5] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Suppression");
+        // newBaseStats[6] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Weight");
+        // newBaseStats[7] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Supply");
+        // // newBaseStats[8] = avg_relia(batMap,stats.tech);
+        // // newBaseStats[9] = reliBonus(batMap,stats.tech);
+        // // newBaseStats[10] = trickleBack(batMap,stats.tech);
+        // // newBaseStats[11] = xpLoss(batMap,stats.tech);
 
-        newAttackStats[0] = softAtk(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers);
-        // newAttackStats[1] = hardAtk(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newAttackStats[2] = airAtk(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newAttackStats[3] = defense(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newAttackStats[4] = breakthrough(batMap,stats.tech, stats.doctrineBuffsMap);
+        newAttackStats[0] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Soft_Attack");
+        newAttackStats[1] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Hard_Attack");
+        newAttackStats[2] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Air_Attack");
+        newAttackStats[3] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Defense");
+        newAttackStats[4] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Breakthrough");
         // newAttackStats[5] = armour(batMap,stats.tech);
         // newAttackStats[6] = piercing(batMap,stats.tech);
         // newAttackStats[7] = initiative(batMap,stats.tech); 
         // //newAttackStats[8] =
         // newAttackStats[9] = capture_ratio(batMap,stats.tech);
-        // newAttackStats[10] = combatWidth(batMap,stats.tech, stats.doctrineBuffsMap);
+        //newAttackStats[10] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Width");
         // newAttackStats[11] = hardness(batMap,stats.tech);
 
-        // newEquipmentCost[0] = manpower(batMap,stats.tech);
-        // newEquipmentCost[1] = training(batMap,stats.tech);
-        // newEquipmentCost[2] = fuel_cap(batMap,stats.tech);
-        // newEquipmentCost[3] = fuel_usage(batMap,stats.tech);
+        // newEquipmentCost[0] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Manpower");
+        // // newEquipmentCost[1] = training(batMap,stats.tech);
+        // // newEquipmentCost[2] = fuel_cap(batMap,stats.tech);
+        // // newEquipmentCost[3] = fuel_usage(batMap,stats.tech);
 
         list();
 

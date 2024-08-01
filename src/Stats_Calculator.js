@@ -1,7 +1,12 @@
 import Equipment_Catalogue from './Units&Data/Equipment.json'
 import Year_Bonus from './Units&Data/YearBonus.json'
 
-export function softAtk(battalionMap, year, doctrineBuffs, supportModifiers){
+export function calculateCombatStats(battalionMap, year, doctrineBuffs, supportModifiers, choice){
+
+    // this function can be used for
+    // HP, suppression, weight, supply use, sft atk, hrd atk, air atk, defense, breakthrough, combat width, 
+    // calculates the total stats that are simply the sum of all the battalions stats
+
 
     let total = 0;
     let baseStat; // the base stat of that equipment
@@ -26,8 +31,8 @@ export function softAtk(battalionMap, year, doctrineBuffs, supportModifiers){
 
         //calculate the equipmentBonus
         if (Object.hasOwn(battalion, "Equipment_Modifier")){
-            if(Object.hasOwn(battalion.Equipment_Modifier, "Soft_Attack")){
-                equipmentBonus = battalion.Equipment_Modifier.Soft_Attack;
+            if(Object.hasOwn(battalion.Equipment_Modifier, choice)){
+                equipmentBonus = battalion.Equipment_Modifier[choice];
             } else {
                 equipmentBonus = 0
             }
@@ -38,8 +43,8 @@ export function softAtk(battalionMap, year, doctrineBuffs, supportModifiers){
         //get the year bonus of the battalion
         yearBonus = Year_Bonus[year][battalion.Name];
         if (Object.hasOwn(Year_Bonus[year],battalion.Name)){
-            if(Object.hasOwn(Year_Bonus[year][battalion.Name], "Soft_Attack")){
-                yearBonus = Year_Bonus[year][battalion.Name].Soft_Attack;
+            if(Object.hasOwn(Year_Bonus[year][battalion.Name], choice)){
+                yearBonus = Year_Bonus[year][battalion.Name][choice];
             } else {
                 yearBonus = 0
             }
@@ -50,30 +55,30 @@ export function softAtk(battalionMap, year, doctrineBuffs, supportModifiers){
 
         //calculate the doctrineBuff
         if (doctrineBuffs.has(battalion.Name)){ //check the doctrinesbuff map to see if this battalion has a buff that can be given
-            if(Object.hasOwn(doctrineBuffs.get(battalion.Name), "Soft_Attack")){
-                doctrineBonus += doctrineBuffs.get(battalion.Name).Soft_Attack;                    
+            if(Object.hasOwn(doctrineBuffs.get(battalion.Name), choice)){
+                doctrineBonus += doctrineBuffs.get(battalion.Name)[choice];                    
             }
         }
         if (doctrineBuffs.has(battalion.Type)){ // bug here, have to check that the soft attack stats is there or not
-            if(Object.hasOwn(doctrineBuffs.get(battalion.Type), "Soft_Attack")){
-                doctrineBonus += doctrineBuffs.get(battalion.Type).Soft_Attack;                    
+            if(Object.hasOwn(doctrineBuffs.get(battalion.Type), choice)){
+                doctrineBonus += doctrineBuffs.get(battalion.Type)[choice];                    
             }
         }
         if (doctrineBuffs.has("Frontline") &&  battalion.Frontline === true){
-            if(Object.hasOwn(doctrineBuffs.get("Frontline"), "Soft_Attack")){
-                doctrineBonus += doctrineBuffs.get("Frontline").Soft_Attack;                    
+            if(Object.hasOwn(doctrineBuffs.get("Frontline"), choice)){
+                doctrineBonus += doctrineBuffs.get("Frontline")[choice];                    
             }
         }
         if (doctrineBuffs.has("Army")){
-            if(Object.hasOwn(doctrineBuffs.get("Army"), "Soft_Attack")){
-                doctrineBonus += doctrineBuffs.get("Army").Soft_Attack;                    
+            if(Object.hasOwn(doctrineBuffs.get("Army"), choice)){
+                doctrineBonus += doctrineBuffs.get("Army")[choice];                    
             }
         }
 
         //find if there is any support company modifiers
         console.log()
         if (supportModifiers.has(battalion.Name)){
-            suppMods = supportModifiers.get(battalion.Name).Soft_Attack;
+            suppMods = supportModifiers.get(battalion.Name)[choice];
         } else {
             suppMods = 0;
         }
@@ -81,8 +86,8 @@ export function softAtk(battalionMap, year, doctrineBuffs, supportModifiers){
         //calculating the baseStat
         battalion.Equipment_List.forEach(element => { // for every equipment in the battalion's equipment 
             console.log(element);
-            if (Object.hasOwn(Equipment_Catalogue[year][element.Name], "Soft_Attack")){
-                baseStat += Equipment_Catalogue[year][element.Name].Soft_Attack;
+            if (Object.hasOwn(Equipment_Catalogue[year][element.Name], choice)){
+                baseStat += Equipment_Catalogue[year][element.Name][choice];
             }
         });
 
