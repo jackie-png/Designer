@@ -18,7 +18,6 @@ function App() {
   const [doctrineBuffsMap, setDoctrineBuffsMap] = useState(new Map()); // this map stores the accumulated buff for a aspecific type of unit
   const [popUp, setPopup] = useState(false);
   const [supportModifiers, setSuppMods] = useState(new Map());
-
 // let g = {
 //   "Speed": 0,
 //   "Organization": 0,

@@ -111,7 +111,7 @@
             "Motorized Anti-Tank": {"RecoveryRate": 0.2}
         },
         {
-            "Support_Comapany": {"Organization": 10, "Soft_Attack": 0.25}
+            "Support_Company": {"Organization": 10, "Soft_Attack": 0.25}
         },
         {
             "Artillery":{"Soft_Attack": 0.1},
@@ -125,7 +125,7 @@
             "Motorized Anti-Tank": {"Soft_Attack": 0.1}
         },
         {
-            "Support_Comapany": {"Organization": 10, "Soft_Attack": 0.25}
+            "Support_Company": {"Organization": 10, "Soft_Attack": 0.25}
         },
         {
             "Tank":{"Breakthrough": 0.1},

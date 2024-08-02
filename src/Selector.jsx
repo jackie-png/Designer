@@ -4,7 +4,7 @@ import { statsArrays } from "./App";
 import styles from './Tables.module.css';
 import Popup from "./Popup";
 //import {speed, hp, organization, recoveryRate, suppression, supplyUse, weight, trickleBack, softAtk, hardAtk, defense, breakthrough, airAtk, combatWidth, armour, hardness, initiative, entrench, piercing, avg_relia, xpLoss, recon, reliBonus, capture_ratio, manpower, training, fuel_cap, fuel_usage} from "./Statscalc.js"
-import {list, calculateCombatStats} from "./Stats_Calculator.js";
+import {list, calculateCombatStats, calculateBaseStats_Avg, calculateBaseStats_Sum, supplyCalc, suppressionCalc, avg_reliability, recon, reliBonus, trickleBack, xpLoss} from "./Stats_Calculator.js";
 
 
 function Selector(){
@@ -29,17 +29,17 @@ function Selector(){
 
         // //go through each stat and call the respective function to calculate the new stat
         // // newBaseStats[0] = speed(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[1] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "HP");
-        // // newBaseStats[2] = organization(batMap,stats.tech, stats.doctrineBuffsMap);
-        // // newBaseStats[3] = recoveryRate(batMap,stats.tech, stats.doctrineBuffsMap);
-        // // newBaseStats[4] = recon(batMap,stats.tech, stats.doctrineBuffsMap);
-        // newBaseStats[5] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Suppression");
-        // newBaseStats[6] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Weight");
-        // newBaseStats[7] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Supply");
-        // // newBaseStats[8] = avg_relia(batMap,stats.tech);
-        // // newBaseStats[9] = reliBonus(batMap,stats.tech);
-        // // newBaseStats[10] = trickleBack(batMap,stats.tech);
-        // // newBaseStats[11] = xpLoss(batMap,stats.tech);
+        newBaseStats[1] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "HP");
+        newBaseStats[2] = calculateBaseStats_Avg(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "Organization");
+        newBaseStats[3] = calculateBaseStats_Avg(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "RecoveryRate")
+        newBaseStats[4] = recon(batMap,stats.year); //ONLY ADD RECON IF THERE IS A RECON COMPANY
+        newBaseStats[5] = suppressionCalc(batMap, stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Suppression");
+        newBaseStats[6] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "Weight");
+        newBaseStats[7] = supplyCalc(batMap, stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Supply");
+        newBaseStats[8] = avg_reliability(batMap, stats.year);
+        newBaseStats[9] = reliBonus(batMap,stats.year); // only add reliability bonus if there is a maintanance compnay
+        newBaseStats[10] = trickleBack(batMap,stats.year); // only if field hospital in division
+        newBaseStats[11] = xpLoss(batMap,stats.year); // only if field hospital in division
 
         newAttackStats[0] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Soft_Attack");
         newAttackStats[1] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Hard_Attack");
@@ -54,8 +54,8 @@ function Selector(){
         //newAttackStats[10] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Width");
         // newAttackStats[11] = hardness(batMap,stats.tech);
 
-        // newEquipmentCost[0] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Manpower");
-        // // newEquipmentCost[1] = training(batMap,stats.tech);
+        newEquipmentCost[0] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "Manpower");
+        newEquipmentCost[1] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "TrainingTime");
         // // newEquipmentCost[2] = fuel_cap(batMap,stats.tech);
         // // newEquipmentCost[3] = fuel_usage(batMap,stats.tech);
 
@@ -81,7 +81,7 @@ function Selector(){
             console.log(stats.doctrineBuffs_Army);
             updateStats();
         }
-    }, [stats.battalionArr, stats.tech, stats.doctrineBuffsMap, stats.doctrineBuffs_Army]);// this will trigger when either the battalions, tech level, or doctrine is changed(soon)
+    }, [stats.battalionArr, stats.year, stats.doctrineBuffsMap, stats.doctrineBuffs_Army]);// this will trigger when either the battalions, tech level, or doctrine is changed(soon)
 
     function removeBattalion(battalion, index){
         /**
@@ -117,11 +117,11 @@ function Selector(){
         /*
         * This function deals with changing the tech level of the division
         */
-        let newYearTech = new Map(stats.yearTech[e.target.value].map(element => [element.Name, element]));
+        //let newYearTech = new Map(stats.yearTech[e.target.value].map(element => [element.Name, element]));
         console.log("Year changed");
-        console.log(newYearTech);
         stats.setYear(e.target.value);
-        stats.setTechLevel(newYearTech);
+        console.log(e.target.value);
+        //stats.setTechLevel(newYearTech);
 
     }
     return(

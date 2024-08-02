@@ -958,7 +958,7 @@
       "Width": 0,
       "Manpower": 500,
       "TrainingTime": 120,
-      "Relia_Bonus": 0.5,
+      "Relia_Bonus": 0.05,
       "Equipment_Capture_Ratio": 0.05,
       "Equipment_List":[
         {
