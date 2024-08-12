@@ -492,6 +492,35 @@ export function entrenchment(battalionMap, supportModifiers){
     return total
 }
 
+export function capture_ratio(battalionMap, year){
+    let total = 0;
+    let yearBonus = 0;
+    let subTotal = 0
+    for (let battalion of battalionMap.keys()){
+
+
+        if (Object.hasOwn(battalion, "Equipment_Capture_Ratio")){
+            subTotal = battalion.Equipment_Capture_Ratio
+        } else {
+            subTotal = 0
+        }
+
+        yearBonus = Year_Bonus[year][battalion.Name];
+        if (Object.hasOwn(Year_Bonus[year],battalion.Name)){
+            if(Object.hasOwn(Year_Bonus[year][battalion.Name], "Equipment_Capture_Ratio")){
+                yearBonus = Year_Bonus[year][battalion.Name]["Equipment_Capture_Ratio"];
+            } else {
+                yearBonus = 0
+            }
+        } else {
+            yearBonus = 0
+        }
+
+        total += 100 * (subTotal + yearBonus) * battalionMap.get(battalion);
+    }
+
+    return total
+}
 export function list(){
     console.log(Equipment_Catalogue);
 }

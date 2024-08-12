@@ -4,7 +4,7 @@ import { statsArrays } from "./App";
 import styles from './Tables.module.css';
 import Popup from "./Popup";
 //import {speed, hp, organization, recoveryRate, suppression, supplyUse, weight, trickleBack, softAtk, hardAtk, defense, breakthrough, airAtk, combatWidth, armour, hardness, initiative, entrench, piercing, avg_relia, xpLoss, recon, reliBonus, capture_ratio, manpower, training, fuel_cap, fuel_usage} from "./Statscalc.js"
-import {entrenchment, hardness, piercing_and_Armour, list, calculateCombatStats, calculateBaseStats_Avg, calculateBaseStats_Sum, supplyCalc, suppressionCalc, avg_reliability, recon, reliBonus, trickleBack, xpLoss,initiative} from "./Stats_Calculator.js";
+import {capture_ratio, entrenchment, hardness, piercing_and_Armour, list, calculateCombatStats, calculateBaseStats_Avg, calculateBaseStats_Sum, supplyCalc, suppressionCalc, avg_reliability, recon, reliBonus, trickleBack, xpLoss,initiative} from "./Stats_Calculator.js";
 
 
 function Selector(){
@@ -51,7 +51,7 @@ function Selector(){
         newAttackStats[6] = piercing_and_Armour(batMap,stats.year,"Piercing");
         newAttackStats[7] = initiative(batMap,stats.year); 
         newAttackStats[8] = entrenchment(batMap, stats.supportModifiers);
-        // newAttackStats[9] = capture_ratio(batMap,stats.tech);
+        newAttackStats[9] = capture_ratio(batMap,stats.year);
         newAttackStats[10] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "Width");
         newAttackStats[11] = hardness(batMap, stats.year );
 
