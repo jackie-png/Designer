@@ -98,7 +98,7 @@ export function calculateCombatStats(battalionMap, year, doctrineBuffs, supportM
 
 
         total += (baseStat + (baseStat * (doctrineBonus + equipmentBonus + yearBonus))) * (1 + suppMods) * battalionMap.get(battalion)
-        console.log(`Year: ${year} |Battalion: ${battalion.Name} |BaseStats: ${baseStat} |DoctrineBuffs: ${doctrineBonus} |EquipmentBonus: ${equipmentBonus} |YearBonus: ${yearBonus}| SuppMods: ${suppMods}| ${choice}| Total: ${total}`)
+        //console.log(`Year: ${year} |Battalion: ${battalion.Name} |BaseStats: ${baseStat} |DoctrineBuffs: ${doctrineBonus} |EquipmentBonus: ${equipmentBonus} |YearBonus: ${yearBonus}| SuppMods: ${suppMods}| ${choice}| Total: ${total}`)
 
     }
     return total
@@ -361,6 +361,135 @@ export function xpLoss(battalionMap, year){
         }
     }   
     return 0
+}
+
+export function initiative(battalionMap, year){
+    for (let battalion of battalionMap.keys()){
+        if (battalion.Name === "Signal Company"){
+            if(Object.hasOwn(Year_Bonus[year], "Signal Company")){
+                return battalion.Initiative + Year_Bonus[year]["Signal Company"].Initiative * 100
+            } else {
+                return battalion.Initiative * 100
+            }
+        }
+    }   
+    return 0
+}
+
+
+export function piercing_and_Armour(battalionMap, year, choice){
+
+    if (battalionMap.size === 0){
+        return 0;
+    }
+    // piercing or armour = 40% * highest + 60% * average 
+    let highest = 0; // holds the highest piercing
+    let total = 0; // total sum of piercing
+    let battalionCount = 0; // total battalion count
+    let equipmentBonus;
+    let yearBonus;
+    let baseStat;
+
+    let subtotal = 0; // piercing of an individual piercing
+
+    for (let battalion of battalionMap.keys()){
+        battalionCount += battalionMap.get(battalion);
+        baseStat = 0;
+
+        //calculate the equipmentBonus
+        if (Object.hasOwn(battalion, "Equipment_Modifier")){
+            if(Object.hasOwn(battalion.Equipment_Modifier, choice)){
+                equipmentBonus = battalion.Equipment_Modifier[choice];
+            } else {
+                equipmentBonus = 0
+            }
+        } else {
+            equipmentBonus = 0
+        }
+
+        //get the year bonus of the battalion
+        yearBonus = Year_Bonus[year][battalion.Name];
+        if (Object.hasOwn(Year_Bonus[year],battalion.Name)){
+            if(Object.hasOwn(Year_Bonus[year][battalion.Name], choice)){
+                yearBonus = Year_Bonus[year][battalion.Name][choice];
+            } else {
+                yearBonus = 0
+            }
+        } else {
+            yearBonus = 0
+        }
+
+        battalion.Equipment_List.forEach(element => { // for every equipment in the battalion's equipment 
+            //console.log(element);
+            if (Object.hasOwn(Equipment_Catalogue[year][element.Name], choice)){
+                baseStat += Equipment_Catalogue[year][element.Name][choice];
+            }
+        });
+
+        //calculate the individual piercing
+        subtotal = baseStat + (baseStat * (yearBonus + equipmentBonus));
+
+        //check if the subtotal is the highest piercing in the division
+        highest = Math.max(highest, subtotal);
+        console.log(`Total: ${total}`);
+
+        total += subtotal * battalionMap.get(battalion);
+
+        console.log(`Battalion: ${battalion.Name}|BaseStats: ${baseStat} |highest: ${highest} |subtotal: ${subtotal}|battalionCount: ${battalionCount}| Total: ${total}`);
+
+    }
+
+    return 0.4 * highest + 0.6 * (total/battalionCount)
+
+
+}
+
+export function hardness(battalionMap, year){
+    if (battalionMap.size === 0){
+        return 0
+    }
+
+    let total = 0;
+    let count = 0;
+    let baseStat;
+
+    for (let battalion of battalionMap.keys()){
+        count += battalionMap.get(battalion);
+        baseStat = 0;
+
+        battalion.Equipment_List.forEach(element => { // for every equipment in the battalion's equipment 
+            //console.log(element);
+            if (Object.hasOwn(Equipment_Catalogue[year][element.Name], "Hardness")){
+                baseStat += Equipment_Catalogue[year][element.Name]["Hardness"];
+            }
+        });
+
+        total += baseStat * battalionMap.get(battalion);
+    
+    }
+
+    return 100 * (total/count);
+}
+
+export function entrenchment(battalionMap, supportModifiers){
+    let total = 0;
+    let suppMods = 0
+    for (let battalion of battalionMap.keys()){
+
+        if (supportModifiers.has(battalion.Name)){
+            if (Object.hasOwn(supportModifiers.get(battalion.Name), "Entrenchment")){
+                suppMods = supportModifiers.get(battalion.Name)["Entrenchment"];
+            } else {
+                suppMods = 0;
+            }
+        } else {
+            suppMods = 0;
+        }
+
+        total += (battalion.Entrenchment + suppMods) * battalionMap.get(battalion);
+    }
+
+    return total
 }
 
 export function list(){

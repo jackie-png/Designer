@@ -2,13 +2,11 @@ import { useState, createContext } from 'react'
 import Tables from './Tables';
 import Selector from './Selector';
 import units from './Units&Data/Units.json';
-import yearTech from './Units&Data/YearTech.json' // each stat is the difference between battalions in 1936 vs battalions in later years
 import Equiplist from './Equiplist';
 import DoctrineTab from './DoctrinesTab';
 export const statsArrays = createContext(); 
 
 function App() {
-  const [tech, setTechLevel] = useState(new Map(yearTech[1936].map(element => [element.Name, element])));
   const [baseStats, setBaseStats] = useState([0,0,0,0,0,0,0,0,0,0,0,0]);
   const [attackStats, setAttackStats] = useState([0,0,0,0,0,0,0,0,0,0,0,0]);
   const [equipmentCost, setEquipmentCost] = useState([0,0,0,0]);
@@ -17,7 +15,7 @@ function App() {
   const [doctrineBuffs_Army, setDoctrineBuffs_Army] = useState(); //accumulator of stat buffs to all batatlions from doctrines, each 
   const [doctrineBuffsMap, setDoctrineBuffsMap] = useState(new Map()); // this map stores the accumulated buff for a aspecific type of unit
   const [popUp, setPopup] = useState(false);
-  const [supportModifiers, setSuppMods] = useState(new Map());
+  const [supportModifiers, setSuppMods] = useState(new Map()); // holds a map of all the stat modifiers a support company can add depending if a specific battalion is in the division
 // let g = {
 //   "Speed": 0,
 //   "Organization": 0,
@@ -123,7 +121,7 @@ function App() {
 
   return (
     <>
-      <statsArrays.Provider value={{supportModifiers, setSuppMods, tech, setTechLevel, yearTech, doctrineBuffs_Army, setDoctrineBuffs_Army, doctrineBuffsMap, setDoctrineBuffsMap, year, setYear, batMap, setBatMap, battalionArr, setBattalionArr, baseStats, setBaseStats, attackStats, setAttackStats, equipmentCost, setEquipmentCost, equipmentList, setEquipmentList, units}}>
+      <statsArrays.Provider value={{supportModifiers, setSuppMods, doctrineBuffs_Army, setDoctrineBuffs_Army, doctrineBuffsMap, setDoctrineBuffsMap, year, setYear, batMap, setBatMap, battalionArr, setBattalionArr, baseStats, setBaseStats, attackStats, setAttackStats, equipmentCost, setEquipmentCost, equipmentList, setEquipmentList, units}}>
         <h1>Hearts of Iron 4 Online Division Designer</h1>
         <button onClick={()=>setPopup(true)}>
           Doctrines

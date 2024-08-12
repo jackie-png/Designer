@@ -131,7 +131,7 @@
                     "Breakthrough": 12,
                     "Fuel_Use": 1.2
                 }, 
-                "Mechanized Equipment":{
+                "Mechanized Truck":{
                     "Defense": 26,
                     "Piercing": 11,
                     "Hardness": 0.6,

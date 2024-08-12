@@ -88,7 +88,7 @@ function Tables(){
                     <span style={{float: "left"}}>Weight</span><span style={{float: "right"}}>{stats.baseStats[6].toFixed(2)}</span>
                     </td>
                     <td className={styles.tableCell}>
-                    <span style={{float: "left"}}>Piecing</span><span style={{float: "right"}}>{stats.attackStats[6].toFixed(2)}</span>
+                    <span style={{float: "left"}}>Piercing</span><span style={{float: "right"}}>{stats.attackStats[6].toFixed(2)}</span>
                     </td>
                 </tr>
                 <tr>

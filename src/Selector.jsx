@@ -4,7 +4,7 @@ import { statsArrays } from "./App";
 import styles from './Tables.module.css';
 import Popup from "./Popup";
 //import {speed, hp, organization, recoveryRate, suppression, supplyUse, weight, trickleBack, softAtk, hardAtk, defense, breakthrough, airAtk, combatWidth, armour, hardness, initiative, entrench, piercing, avg_relia, xpLoss, recon, reliBonus, capture_ratio, manpower, training, fuel_cap, fuel_usage} from "./Statscalc.js"
-import {list, calculateCombatStats, calculateBaseStats_Avg, calculateBaseStats_Sum, supplyCalc, suppressionCalc, avg_reliability, recon, reliBonus, trickleBack, xpLoss} from "./Stats_Calculator.js";
+import {entrenchment, hardness, piercing_and_Armour, list, calculateCombatStats, calculateBaseStats_Avg, calculateBaseStats_Sum, supplyCalc, suppressionCalc, avg_reliability, recon, reliBonus, trickleBack, xpLoss,initiative} from "./Stats_Calculator.js";
 
 
 function Selector(){
@@ -25,6 +25,7 @@ function Selector(){
         const newAttackStats = [0,0,0,0,0,0,0,0,0,0,0,0];
         const newBaseStats = [0,0,0,0,0,0,0,0,0,0,0,0];
         const newEquipmentCost = [0,0,0,0];
+        console.log(stats.supportModifiers);
         
 
         // //go through each stat and call the respective function to calculate the new stat
@@ -46,13 +47,13 @@ function Selector(){
         newAttackStats[2] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Air_Attack");
         newAttackStats[3] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Defense");
         newAttackStats[4] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Breakthrough");
-        // newAttackStats[5] = armour(batMap,stats.tech);
-        // newAttackStats[6] = piercing(batMap,stats.tech);
-        // newAttackStats[7] = initiative(batMap,stats.tech); 
-        // //newAttackStats[8] =
+        newAttackStats[5] = piercing_and_Armour(batMap,stats.year, "Armour");
+        newAttackStats[6] = piercing_and_Armour(batMap,stats.year,"Piercing");
+        newAttackStats[7] = initiative(batMap,stats.year); 
+        newAttackStats[8] = entrenchment(batMap, stats.supportModifiers);
         // newAttackStats[9] = capture_ratio(batMap,stats.tech);
-        //newAttackStats[10] = calculateAddStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Width");
-        // newAttackStats[11] = hardness(batMap,stats.tech);
+        newAttackStats[10] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "Width");
+        newAttackStats[11] = hardness(batMap, stats.year );
 
         newEquipmentCost[0] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "Manpower");
         newEquipmentCost[1] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "TrainingTime");
