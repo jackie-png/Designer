@@ -57,8 +57,8 @@ function Selector(){
 
         newEquipmentCost[0] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "Manpower");
         newEquipmentCost[1] = calculateBaseStats_Sum(batMap, stats.doctrineBuffsMap, stats.supportModifiers, "TrainingTime");
-        // // newEquipmentCost[2] = fuel_cap(batMap,stats.tech);
-        // // newEquipmentCost[3] = fuel_usage(batMap,stats.tech);
+        newEquipmentCost[2] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Fuel_Use");
+        newEquipmentCost[3] = calculateCombatStats(batMap,stats.year, stats.doctrineBuffsMap, stats.supportModifiers, "Fuel_Cap");
 
         list();
 

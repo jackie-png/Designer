@@ -147,7 +147,7 @@
                     "Armour": 10,
                     "Fuel_Cap": 115.2
                 },
-                "Amtrac":{
+                "Amtracs":{
                     "Defense": 26,
                     "Piercing": 11,
                     "Hardness": 0.6,
@@ -248,7 +248,7 @@
                     "Speed": 10,
                     "Armour": 15
                 },
-                "Amtrac":{
+                "Amtracs":{
                     "Defense": 26,
                     "Piercing": 11,
                     "Hardness": 0.6,
@@ -350,7 +350,7 @@
                     "Speed": 12,
                     "Armour": 20
                 },
-                "Amtrac":{
+                "Amtracs":{
                     "Defense": 30,
                     "Piercing": 16,
                     "Hardness": 0.70,

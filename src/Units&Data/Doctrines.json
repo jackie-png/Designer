@@ -108,7 +108,21 @@
             "Anti-Air":{"RecoveryRate": 0.2},
             "Motorized Anti-Air":{"RecoveryRate": 0.2},
             "Anti-Tank": {"RecoveryRate": 0.2} ,
-            "Motorized Anti-Tank": {"RecoveryRate": 0.2}
+            "Motorized Anti-Tank": {"RecoveryRate": 0.2},
+            "Target_Buffs": {
+                "Signal Company": {
+                    "Artillery":{"Defense": 0.1},
+                    "Motorized Artillery":{"Defense": 0.1},
+                    "Rocket Artillery":{"Defense": 0.1},
+                    "Truck-Drawn Rocket Artillery":{"Defense": 0.1},
+                    "Motorized Rocket Artillery":{"Defense": 0.1},
+                    "Anti-Air":{"Defense": 0.1},
+                    "Motorized Anti-Air":{"Defense": 0.1},
+                    "Anti-Tank": {"Defense": 0.1} ,
+                    "Motorized Anti-Tank": {"Defense": 0.1},
+                    "Support Artillery": {"Defense": 0.1}
+                }
+            }
         },
         {
             "Support_Company": {"Organization": 10, "Soft_Attack": 0.25}
@@ -166,7 +180,14 @@
             "Armour_Variant":{"RecoveryRate": 0.05}
         },
         {
-            "Frontline": {"Organization": 5}
+            "Frontline": {"Organization": 5},
+            "Target_Buffs": {
+                "Cavalry Recon Company": {
+                    "Anti-Air":{"Air_Attack": 0.1},
+                    "Motorized Anti-Air":{"Air_Attack": 0.1}
+                }
+            }
+
         },
         {
             "Frontline": {"Soft_Attack": 0.05},
@@ -226,7 +247,11 @@
 
         },
         {
-            "Nothing": 0
+            "Target_Buffs": {
+                "Cavalry Recon Company": {
+                    "Infantry":{"Soft_Attack": 0.05}
+                }
+            }
         },
         {
             "Army": {"Breakthrough": 0.1}
@@ -235,7 +260,14 @@
             "Nothing": 0
         },
         {
-            "Nothing": 0
+            "Target_Buffs": {
+                "Logistic Company": {
+                    "Infantry": {"Defense": 0.05},
+                    "Motorized Infantry": {"Defense": 0.05},
+                    "Mechanized Infantry": {"Defense": 0.05},
+                    "Amtrac Battalion": {"Defense": 0.05}
+                }
+            }
         },
         {
             "Tank": {"Organization": 1},
@@ -275,7 +307,13 @@
             "Nothing":0
         },
         {
-            "Nothing":0
+            "Target_Buffs": {
+                "Military Police": {
+                    "Cavalry":{
+                        "Suppression": 0.5
+                    }
+                }
+            }
         },
         {
             "Tank": {"Organization": 2},
